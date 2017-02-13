@@ -160,18 +160,18 @@ nav ul li .menu:hover{
 }
 [class^="sub_"] li{
     float: none;
+    width: 188px;
     background-color: #04142b;
     border-left: 1px #2b3542 solid;
     border-right: 1px #2b3542 solid;
     border-bottom: 1px #2b3542 solid;
 }
 [class^="sub_"] li a{
-    position: relative;
-    left: 30px;
     display: block;
-    width: 188px;
+    width: 158px;
     height: 46px;
     line-height: 46px;
+    padding-left: 30px;
 }
 .sub_page{
     left:500px;
