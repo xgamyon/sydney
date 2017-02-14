@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>:::: minseok portfolio ::::</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -39,12 +40,37 @@
                         <li class="page">
                             <a class="menu" href="">PAGES</a>
                             <ul class="sub_page">
-                                <li><a href="">About</a></li>
+                                <li>
+                                    <a href="">About<span class="menu_arrow"></span></a>
+                                    <ul class="depth3 none">
+                                        <li><a href="">About us</a></li>
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">History</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="">Services</a></li>
                                 <li><a href="">Single service</a></li>
                                 <li><a href="">Pricing tables</a></li>
-                                <li><a href="">Special pages</a></li>
-                                <li><a href="">Samples pages</a></li>
+                                <li>
+                                    <a href="">Special pages<span class="menu_arrow"></span></a>
+                                    <ul class="depth3 none">
+                                        <li><a href="">Error 404</a></li>
+                                        <li><a href="">Maintenance</a></li>
+                                        <li><a href="">Coming soon</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">Search results</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Samples pages<span class="menu_arrow"></span></a>
+                                    <ul class="depth3">
+                                        <li><a href="">No sidebar</a></li>
+                                        <li><a href="">Right sidebar</a></li>
+                                        <li><a href="">Left sidebar</a></li>
+                                        <li><a href="">Fluid page</a></li>
+                                        <li><a href="">Boxed page</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li class="projects">
