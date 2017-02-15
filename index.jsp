@@ -17,15 +17,17 @@
                     <li><i class="flaticon-location"></i><span>4124 Barnes Street, Sanford, FL 32771</span></li>
                     <li><i class="flaticon-clock"></i><span>Open: Mon - Sat <span class="c8bba1">08:00 - 19:00.</span> Sunday <span class="c8bba1">CLOSED</span></span></li>
                     <li><i class="flaticon-technology"></i><span> 1-800-<span class="c8bba1">SYDNEY</span>-2171</span></li>
+                    <li>
+                        <div class="search">
+                            <form action="" name="search" method="get">
+                                <fieldset>
+                                    <input type="search" placeholder="Search">
+                                    <input type="submit"  value="">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </li>
                 </ul>
-                <div class="search">
-                    <form action="" name="search" method="get">
-                        <fieldset>
-                            <input type="search" placeholder="Search">
-                            <input type="submit"  value="">
-                        </fieldset>
-                    </form>
-                </div>
             </div>
         </div>
         <div class="header">

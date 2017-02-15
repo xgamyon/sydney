@@ -36,13 +36,25 @@ header{
     background-color: #04142b;
 }
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .container ul li{
-    float: left;
-    margin-right: 45px;
-    line-height: 38px;
+    display: inline-block;
+    line-height: 42px;
+}
+.container ul li:nth-child(1){
+    width: 25%;
+}
+.container ul li:nth-child(2){
+    width: 30%;
+}
+.container ul li:nth-child(3){
+    width: 15%;
+}
+.container ul li:nth-child(4){
+    float: right;
+    width: 23%;
 }
 .container ul li span{
     color: #fff;
@@ -59,13 +71,13 @@ header{
 .flaticon-technology:before{
     font-size: 15px;
     color: #c8bba1;
+    margin-left: 0;
     margin-right: 8px;
 }
 
 /*serch 버튼*/
 .search{
-    float: right;
-    width: 260px;
+    max-width: 260px;
     height: 42px;
     line-height: 42px;
     background-color: #c8bba1;
@@ -84,7 +96,7 @@ header{
     border: 0;
     background-color: #c8bba1;
     color: #fff;
-    width: 180px;
+    max-width: 180px;
     height: 37px;
     font-size: 15px;
 }
@@ -113,10 +125,9 @@ nav{
     position: relative;
     top: 0;
     left: 0;
-    width: 1170px;
+    max-width: 1170px;
     height: 106px;
     margin: 0 auto;
-    border: 1px 000 solid;
 }
 nav .logo{
     position: absolute;
