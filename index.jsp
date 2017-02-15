@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>:::: minseok portfolio ::::</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -39,7 +38,7 @@
                         </li>
                         <li class="page">
                             <a class="menu" href="">PAGES</a>
-                            <ul class="sub_page">
+                            <ul class="sub_page none">
                                 <li>
                                     <a href="">About<span class="menu_arrow"></span></a>
                                     <ul class="depth3 none">
@@ -63,7 +62,7 @@
                                 </li>
                                 <li>
                                     <a href="">Samples pages<span class="menu_arrow"></span></a>
-                                    <ul class="depth3">
+                                    <ul class="depth3 none">
                                         <li><a href="">No sidebar</a></li>
                                         <li><a href="">Right sidebar</a></li>
                                         <li><a href="">Left sidebar</a></li>
@@ -75,15 +74,52 @@
                         </li>
                         <li class="projects">
                             <a class="menu" href="">PROJECTS</a>
+                            <ul class="sub_projects none">
+                                <li><a href="">Projects pagination</a></li>
+                                <li><a href="">Projects filter</a></li>
+                                <li><a href="">Projects fullwidth</a></li>
+                                <li><a href="">Single project</a></li>
+                            </ul>
                         </li>
                         <li class="news">
                             <a class="menu" href="">NEWS</a>
+                            <ul class="sub_news none">
+                                <li><a href="">news right sidebar</a></li>
+                                <li><a href="">news left sidebar</a></li>
+                                <li><a href="">news no sidebar</a></li>
+                                <li>
+                                    <a href="">Single news<span class="menu_arrow"></span></a>
+                                    <ul class="depth3 none">
+                                        <li><a href="">Right sidebar</a></li>
+                                        <li><a href="">Leftt sidebar</a></li>
+                                        <li><a href="">No sidebar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="contact">
                             <a class="menu" href="">CONTACT</a>
                         </li>
                         <li class="shortcodes">
                             <a class="menu" href="">SHORTCODES</a>
+                            <ul class="sub_shortcodes none">
+                                <li><a href="">Grid</a></li>
+                                <li><a href="">Alerts</a></li>
+                                <li><a href="">Accordions</a></li>
+                                <li><a href="">Counters</a></li>
+                                <li><a href="">Typography</a></li>
+                                <li><a href="">Text boxes</a></li>
+                                <li><a href="">Tabs</a></li>
+                                <li><a href="">Pie charts</a></li>
+                                <li><a href="">Lists</a></li>
+                                <li><a href="">Image boxes</a></li>
+                                <li><a href="">Maps</a></li>
+                                <li><a href="">Progress bars</a></li>
+                                <li><a href="">Headines</a></li>
+                                <li><a href="">Services boxes</a></li>
+                                <li><a href="">Clients</a></li>
+                                <li><a href="">Statistics</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -91,7 +127,12 @@
         </div>
     </header>
     <section>
-        <div class="main_img"></div>
+        <div class="main_slide">
+            <div class="main_img_bg"></div>
+            <div class="main_img1">
+
+            </div>
+        </div>
     </section>
 </body>
 </html>
