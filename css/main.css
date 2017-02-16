@@ -1,12 +1,3 @@
-/*@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto Regular'),
-         local('Roboto-Regular'),
-         url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff)
-         format('woff');
-}*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic);
 *{
     margin: 0;
@@ -129,23 +120,23 @@ nav{
     height: 106px;
     margin: 0 auto;
 }
-nav .logo{
+nav .logo a{
     position: absolute;
     top: 30px;
     left: 25px;
     width: 135px;
     height: 46px;
-    background-image: url('../images/logo.png');
-    font-size: 0;
-    text-indent: -9999px;
 }
 nav > ul{
     float: right;
 }
-nav ul li{
+nav .menu{
     float: left;
+    position: relative;
+    top: 0;
+    left: 0;
 }
-nav ul li .menu{
+nav .menu [class^="menu_"]{
     display: block;
     margin: 0 20px;
     padding: 0 10px;
@@ -155,10 +146,10 @@ nav ul li .menu{
     font-weight: 700;
     color: #04142b;
 }
-nav ul li:first-child .menu{
+nav .menu:first-child [class^="menu_"]{
     color: #c8bba1;
 }
-nav ul li .menu:hover{
+nav .menu [class^="menu_"]:hover{
     color: #c8bba1;
 }
 
@@ -170,7 +161,8 @@ nav ul li .menu:hover{
 [class^="sub_"]{
     position: absolute;
     top:106px;
-    z-index: 1;
+    left: 30px;
+    z-index: 10;
 }
 [class^="sub_"] li{
     position: relative;
@@ -203,10 +195,10 @@ nav ul li .menu:hover{
     margin-right: 15px;
     border: 1px #2b3542 solid;
 }
-.menu_arrow{
+.sub_arrow{
     position: absolute;
     top: 18px;
-    right: 15px;
+    left: 165px;
     display: inline-block;
     width: 5px;
     height: 10px;
@@ -223,18 +215,10 @@ nav ul li .menu:hover{
     top: -2px;
     left: 188px;
 }
-.sub_page{
-    left: 595px;
-}
-.sub_projects{
-    left: 700px;
-}
-.sub_news{
-    left: 830px;
-}
 .sub_shortcodes{
-    left: 0px;
-    width: 1174px;
+    position: absolute;
+    left: -1030px;
+    width: 1176px;
 }
 .sub_shortcodes li{
     float: left;
@@ -255,24 +239,133 @@ section{
 .main_slide{
     position: relative;
     top: 0;
+    left:0;
+    width: 100%;
+    max-height: 680px;
+    overflow: hidden;
 }
 [class^="main_img"]{
-    position: relative;
-    width: 100%;
-    height: 680px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center 0;
-    border: 1px #f00 solid;
-}
-.main_img_bg{
-    position: absolute;
-    top: 0;
-    background-color: rgba(4, 20, 43, 0.75);
-    z-index: 10;
 }
 .main_img1{
     background-image: url('../images/bg-slide-1.jpg');
 }
+.main_img2{
+    background-image: url('../images/bg-slide-2.jpg');
+}
+.main_img3{
+    background-image: url('../images/bg-slide-3.jpg');
+}
+.main_img_bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 20, 43, 0.75);
+    z-index: 1;
+}
+
+
+/*메인 이미지 위치 버튼*/
+.img_num{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    z-index: 5;
+}
+.img_num > a{
+    display: inline-block;
+    margin: 0 5px;
+    width: 8px;
+    height: 8px;
+    text-indent: -9999px;
+    font-size: 0;
+    border: 1px #c8bba1 solid;
+}
+
+/*메인 이미지 버튼*/
+[class^="main_bt_"]{
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    border: 2px #c8bba1 solid;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+.main_bt_prev{
+    left:20px;
+    background-image: url('../images/arrow_left.png');
+}
+.main_bt_next{
+    right:20px;
+    background-image: url('../images/arrow_right.png');
+}
+[class^="main_bt_"] a{
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+/*메인 이미지 1*/
+[class^="slide_"]{
+    position: relative;
+    z-index: 3;
+}
+.slide_1{
+    left: 53%;
+}
+
+
+
+
+
+
+
+/*메인 배너*/
+.main_banner{
+    max-width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main_banner ul{
+    margin: 0 auto;
+}
+.main_banner ul li{
+    float: left;
+    width: 30%;
+    max-width: 360px;
+    max-height: 262px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+.main_banner ul li:first-child{
+
+}
+.main_banner ul li:last-child{
+    padding-right: 0;
+}
+.main_banner ul li img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

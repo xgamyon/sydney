@@ -8,6 +8,7 @@
     <title>:::: minseok portfolio ::::</title>
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css">
 </head>
 <body>
     <header>
@@ -33,16 +34,16 @@
         <div class="header">
             <div class="nav_cont">
                 <nav>
-                    <div class="logo"><a href="">sydney</a></div>
+                    <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="sydney"></a></div>
                     <ul>
-                        <li class="home">
-                            <a class="menu" href="">HOME</a>
+                        <li class="menu">
+                            <a class="menu_home" href="">HOME</a>
                         </li>
-                        <li class="page">
-                            <a class="menu" href="">PAGES</a>
+                        <li class="menu">
+                            <a class="menu_page" href="">PAGES</a>
                             <ul class="sub_page none">
                                 <li>
-                                    <a href="">About<span class="menu_arrow"></span></a>
+                                    <a href="">About<span class="sub_arrow"></span></a>
                                     <ul class="depth3 none">
                                         <li><a href="">About us</a></li>
                                         <li><a href="">Careers</a></li>
@@ -53,7 +54,7 @@
                                 <li><a href="">Single service</a></li>
                                 <li><a href="">Pricing tables</a></li>
                                 <li>
-                                    <a href="">Special pages<span class="menu_arrow"></span></a>
+                                    <a href="">Special pages<span class="sub_arrow"></span></a>
                                     <ul class="depth3 none">
                                         <li><a href="">Error 404</a></li>
                                         <li><a href="">Maintenance</a></li>
@@ -63,7 +64,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="">Samples pages<span class="menu_arrow"></span></a>
+                                    <a href="">Samples pages<span class="sub_arrow"></span></a>
                                     <ul class="depth3 none">
                                         <li><a href="">No sidebar</a></li>
                                         <li><a href="">Right sidebar</a></li>
@@ -74,8 +75,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="projects">
-                            <a class="menu" href="">PROJECTS</a>
+                        <li class="menu">
+                            <a class="menu_project" href="">PROJECTS</a>
                             <ul class="sub_projects none">
                                 <li><a href="">Projects pagination</a></li>
                                 <li><a href="">Projects filter</a></li>
@@ -83,14 +84,14 @@
                                 <li><a href="">Single project</a></li>
                             </ul>
                         </li>
-                        <li class="news">
-                            <a class="menu" href="">NEWS</a>
+                        <li class="menu">
+                            <a class="menu_news" href="">NEWS</a>
                             <ul class="sub_news none">
                                 <li><a href="">news right sidebar</a></li>
                                 <li><a href="">news left sidebar</a></li>
                                 <li><a href="">news no sidebar</a></li>
                                 <li>
-                                    <a href="">Single news<span class="menu_arrow"></span></a>
+                                    <a href="">Single news<span class="sub_arrow"></span></a>
                                     <ul class="depth3 none">
                                         <li><a href="">Right sidebar</a></li>
                                         <li><a href="">Leftt sidebar</a></li>
@@ -99,11 +100,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="contact">
-                            <a class="menu" href="">CONTACT</a>
+                        <li class="menu">
+                            <a class="menu_contact" href="">CONTACT</a>
                         </li>
-                        <li class="shortcodes">
-                            <a class="menu" href="">SHORTCODES</a>
+                        <li class="menu">
+                            <a class="menu_shortcodes" href="">SHORTCODES</a>
                             <ul class="sub_shortcodes none">
                                 <li><a href="">Grid</a></li>
                                 <li><a href="">Alerts</a></li>
@@ -131,9 +132,39 @@
     <section>
         <div class="main_slide">
             <div class="main_img_bg"></div>
-            <div class="main_img1">
+            <ul>
+                <li>
+                    <div class="main_img1">
+                        <div class="slide_1">
+                            <img src="images/slide-1-image-1.png" alt="slide1">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="main_img2">
 
+                    </div>
+                </li>
+                <li>
+                    <div class="main_img3">
+
+                    </div>
+                </li>
+            </ul>
+            <div class="img_num">
+                <a href="javascript:void(0)">1</a>
+                <a href="javascript:void(0)">2</a>
+                <a href="javascript:void(0)">3</a>
             </div>
+            <div class="main_bt_prev" type="button"><a href="#"></a></div>
+            <div class="main_bt_next" type="button"><a href="#"></a></div>
+        </div>
+        <div class="main_banner">
+            <ul>
+                <li><img src="images/image-1.jpg" alt=""></li>
+                <li><img src="images/image-2.jpg" alt=""></li>
+                <li><img src="images/image-3.jpg" alt=""></li>
+            </ul>
         </div>
     </section>
 </body>
