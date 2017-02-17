@@ -152,18 +152,43 @@
                 </li>
             </ul>
             <div class="img_num">
-                <a href="javascript:void(0)">1</a>
+                <a class="num_on" href="javascript:void(0)">1</a>
                 <a href="javascript:void(0)">2</a>
                 <a href="javascript:void(0)">3</a>
             </div>
-            <div class="main_bt_prev" type="button"><a href="#"></a></div>
-            <div class="main_bt_next" type="button"><a href="#"></a></div>
+            <div class="main_bt_prev" type="button"><a href="#"><img src="images/arrow_left.png" alt=""></a></div>
+            <div class="main_bt_next" type="button"><a href="#"><img src="images/arrow_right.png" alt=""></a></div>
         </div>
         <div class="main_banner">
             <ul>
-                <li><img src="images/image-1.jpg" alt=""></li>
-                <li><img src="images/image-2.jpg" alt=""></li>
-                <li><img src="images/image-3.jpg" alt=""></li>
+                <%-- <li>
+                    <img src="images/image-1.jpg" alt="">
+                    <a class="pop_bt" id="op_cl" href="#popup">WHY CHOOSE US</a>
+                    <div class="banner_pop" id="popup">
+                        <a class="close" href="#op_cl">X</a>
+                    </div>
+                </li> --%>
+                <li>
+                    <img src="images/image-1.jpg" alt="">
+                    <a class="pop_bt" href="">WHY CHOOSE US</a>
+                    <div class="banner_pop">
+                        <a class="close" href="">X</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image-2.jpg" alt="">
+                    <a class="pop_bt" href="">INVESTMENT PROJECTS</a>
+                    <div class="banner_pop">
+                        <a class="close" href="">X</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image-3.jpg" alt="">
+                    <a class="pop_bt" href="">THE BEST QUALITY</a>
+                    <div class="banner_pop">
+                        <a class="close" href="">X</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>

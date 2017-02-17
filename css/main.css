@@ -138,19 +138,21 @@ nav .menu{
 }
 nav .menu [class^="menu_"]{
     display: block;
-    margin: 0 20px;
-    padding: 0 10px;
     height: 106px;
     line-height: 106px;
+    margin: 0 20px;
+    padding: 0 10px;
     font-size: 14px;
     font-weight: 700;
     color: #04142b;
-}
-nav .menu:first-child [class^="menu_"]{
-    color: #c8bba1;
+    transition: color 0.3s;
 }
 nav .menu [class^="menu_"]:hover{
     color: #c8bba1;
+}
+nav .menu .menu_home{
+    color: #c8bba1;
+    transition: none;
 }
 
 
@@ -173,6 +175,7 @@ nav .menu [class^="menu_"]:hover{
     border-left: 1px #2b3542 solid;
     border-right: 1px #2b3542 solid;
     border-bottom: 1px #2b3542 solid;
+    transition: 0.3s;
 }
 [class^="sub_"] li:first-child{
     border-top: 2px #c8bba1 solid;
@@ -184,6 +187,7 @@ nav .menu [class^="menu_"]:hover{
     line-height: 46px;
     padding-left: 15px;
     color: #fff;
+    transition: 0.5s;
 }
 [class^="sub_"] li a::before{
     content: "";
@@ -204,10 +208,10 @@ nav .menu [class^="menu_"]:hover{
     height: 10px;
     background-image: url('../images/menu_arrow.png');
 }
-[class^="sub_"] > li:hover{
+[class^="sub_"] li:hover{
     border-bottom: 1px #c8bba1 solid;
 }
-[class^="sub_"] > li a:hover{
+[class^="sub_"] li a:hover{
     color: #c8bba1;
 }
 .depth3{
@@ -273,8 +277,8 @@ section{
     position: absolute;
     top: 85%;
     left: 50%;
-    margin-left: -35px;
-    width: 70px;
+    margin-left: -40px;
+    width: 80px;
     z-index: 5;
 }
 .img_num > a{
@@ -286,31 +290,45 @@ section{
     font-size: 0;
     border: 1px #c8bba1 solid;
 }
+.img_num > a:hover{
+    border: 2px #c8bba1 solid;
+}
+.img_num .num_on{
+    border: 2px #c8bba1 solid;
+}
+
 
 /*메인 이미지 버튼*/
 [class^="main_bt_"]{
     position: absolute;
     top: 50%;
     margin-top: -23px;
-    border: 2px #c8bba1 solid;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 5;
 }
 .main_bt_prev{
-    left:20px;
-    background-image: url('../images/arrow_left.png');
+    left: 20px;
 }
 .main_bt_next{
-    right:20px;
-    background-image: url('../images/arrow_right.png');
+    right: 20px;
 }
 [class^="main_bt_"] a{
     display: block;
     width: 45px;
     height: 45px;
+    border: 2px #c8bba1 solid;
+    transition: background-color 0.5s;
 }
-
+[class^="main_bt_"] a:hover{
+    border: 2px #000 solid;
+    background-color: #000;
+}
+[class^="main_bt_"] a img{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
 
 
 /*메인 이미지 1*/
@@ -331,22 +349,23 @@ section{
 /*메인 배너*/
 .main_banner{
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 100px auto;
     overflow: hidden;
 }
 .main_banner ul{
     margin: 0 auto;
 }
 .main_banner ul li{
+    position: relative;
     float: left;
-    width: 30%;
+    width: 33.333333%;
     max-width: 360px;
     max-height: 262px;
     overflow: hidden;
-    padding: 0 15px;
+    margin: 0 15px;
 }
 .main_banner ul li:first-child{
-
+    padding-left: 0;
 }
 .main_banner ul li:last-child{
     padding-right: 0;
@@ -354,16 +373,60 @@ section{
 .main_banner ul li img{
     width: 100%;
 }
+.main_banner ul li .pop_bt{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width:100%;
+    padding-left: 30px;
+    height: 53px;
+    line-height: 55px;
+    color: #fff;
+    font-weight: 700;
+    background-color: rgba(4, 20, 43, 0.9);
+    transition: background 0.3s;
+}
+.main_banner ul li .pop_bt:hover{
+    background-color: #c8bba1;
+}
 
 
+/*메인 배너 팝업*/
+.banner_pop{
+    position: absolute;
+    top: 0;
+    width: 360px;
+    height: 262px;
+    background-color: rgba(4, 20, 43, 0.9);
+}
+/*.banner_pop:target{
+    animation: open 1s;
+}
+#op_cl:target + .banner_pop{
+    animation: close 1s;
+}
 
+@keyframes open{
+    from{ top:262px;}
+    to{ top:0;}
+}
+@keyframes close{
+    from{ top:0;}
+    to{ top: 262px;}
+}*/
 
-
-
-
-
-
-
+.banner_pop .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #f00;
+    text-align: center;
+    color: #c8bba1;
+}
 
 
 
