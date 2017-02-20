@@ -339,7 +339,29 @@ section{
 .slide_1{
     left: 53%;
 }
-
+.slide_1_line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -58px;
+    margin-left: -418px;
+    width: 800px;
+    height: 110px;
+    border: 8px #c8bba1 solid;
+    z-index: 1;
+}
+.slide_1_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -380px;
+    margin-top: -45px;
+    width: 760px;
+    height: 100px;
+    font-size: 87px;
+    font-weight: 500;
+    color: #fff;
+}
 
 
 
@@ -394,7 +416,7 @@ section{
 /*메인 배너 팝업*/
 .banner_pop{
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 360px;
     height: 262px;
     background-color: rgba(4, 20, 43, 0.9);
@@ -417,16 +439,70 @@ section{
 
 .banner_pop .close{
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
     display: block;
     width: 20px;
     height: 20px;
     line-height: 20px;
-    border: 1px solid #f00;
     text-align: center;
     color: #c8bba1;
 }
+.banner_pop ul li{
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.banner_pop ul li:last-child{
+    position: absolute;
+    bottom: 25px;
+}
+.banner_pop strong{
+    color: #fff;
+}
+.banner_pop span{
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.banner_pop a{
+    color: #c8bba1;
+    font-size: 13px;
+    font-weight: 700;
+}
+.banner_pop a .pop_arrow{
+    color: #c8bba1;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.banner_pop a:hover{
+    color: #fff;
+}
+.banner_pop a:hover span{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

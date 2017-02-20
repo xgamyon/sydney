@@ -138,6 +138,8 @@
                         <div class="slide_1">
                             <img src="images/slide-1-image-1.png" alt="slide1">
                         </div>
+                        <div class="slide_1_line"></div>
+                        <div class="slide_1_title">Protect your assets</div>
                     </div>
                 </li>
                 <li>
@@ -172,6 +174,14 @@
                     <img src="images/image-1.jpg" alt="">
                     <a class="pop_bt" href="">WHY CHOOSE US</a>
                     <div class="banner_pop">
+                        <ul>
+                            <li><strong>WHY CHOOSE US</strong></li>
+                            <li><span>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam sed leo quam. Curabitur
+                                pulvinar pellentesque ante, non gravida dui
+                                tincidunt eget. Duis vitae posuere mi.</span></li>
+                            <li><a href="#">READ MORE<span class="pop_arrow">→</span></a></li>
+                        </ul>
                         <a class="close" href="">X</a>
                     </div>
                 </li>
@@ -179,6 +189,14 @@
                     <img src="images/image-2.jpg" alt="">
                     <a class="pop_bt" href="">INVESTMENT PROJECTS</a>
                     <div class="banner_pop">
+                        <ul>
+                            <li><strong>INVESTMENT PROJECTS</strong></li>
+                            <li><span>Praesent dolor neque, commodo et risus non,
+                                tristique interdum urna. Quisque fringilla velit dui,
+                                at tempus nibh iaculis eget. Ut convallis bibendum
+                                sapien non semper.</span></li>
+                            <li><a href="#">READ MORE<span class="pop_arrow">→</span></a></li>
+                        </ul>
                         <a class="close" href="">X</a>
                     </div>
                 </li>
@@ -186,6 +204,14 @@
                     <img src="images/image-3.jpg" alt="">
                     <a class="pop_bt" href="">THE BEST QUALITY</a>
                     <div class="banner_pop">
+                        <ul>
+                            <li><strong>THE BEST QUALITY</strong></li>
+                            <li><span>Curabitur pretium id nisl sed luctus.
+                                Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                                Maecenas sit amet tempor erat eget ultrices.</span></li>
+                            <li><a href="#">READ MORE<span class="pop_arrow">→</span></a></li>
+                        </ul>
                         <a class="close" href="">X</a>
                     </div>
                 </li>
