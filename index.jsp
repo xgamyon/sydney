@@ -144,7 +144,6 @@
                             <span class="slide_1_sub">Register today.</span>
                             <span class="slide_1_sub2"><span class="c8bba1">CALL NOW </span>1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
                         </div>
-                        <div class="slide_1_sub2"></div>
                     </div>
                 </li>
                 <li>
