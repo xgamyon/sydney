@@ -139,7 +139,12 @@
                             <img src="images/slide-1-image-1.png" alt="slide1">
                         </div>
                         <div class="slide_1_line"></div>
-                        <div class="slide_1_title">Protect your assets</div>
+                        <div class="slide_1_title">
+                            <cite>Protect your assets</cite>
+                            <span class="slide_1_sub">Register today.</span>
+                            <span class="slide_1_sub2"><span class="c8bba1">CALL NOW </span>1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
+                        </div>
+                        <div class="slide_1_sub2"></div>
                     </div>
                 </li>
                 <li>
