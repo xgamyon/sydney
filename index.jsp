@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/mobile.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -37,14 +39,14 @@
                     <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="sydney"></a></div>
                     <ul>
                         <li class="menu">
-                            <a class="menu_home" href="">HOME</a>
+                            <a class="menu_home" href="javascript:void(0)">HOME</a>
                         </li>
                         <li class="menu">
-                            <a class="menu_page" href="">PAGES</a>
-                            <ul class="sub_page none">
+                            <a class="menu_page" href="javascript:void(0)">PAGES</a>
+                            <ul class="sub_page">
                                 <li>
-                                    <a href="">About<span class="sub_arrow"></span></a>
-                                    <ul class="depth3 none">
+                                    <a href="javascript:void(0)">About<span class="arrow_sub"></span></a>
+                                    <ul class="depth3">
                                         <li><a href="">About us</a></li>
                                         <li><a href="">Careers</a></li>
                                         <li><a href="">History</a></li>
@@ -54,8 +56,8 @@
                                 <li><a href="">Single service</a></li>
                                 <li><a href="">Pricing tables</a></li>
                                 <li>
-                                    <a href="">Special pages<span class="sub_arrow"></span></a>
-                                    <ul class="depth3 none">
+                                    <a href="javascript:void(0)">Special pages<span class="arrow_sub"></span></a>
+                                    <ul class="depth3">
                                         <li><a href="">Error 404</a></li>
                                         <li><a href="">Maintenance</a></li>
                                         <li><a href="">Coming soon</a></li>
@@ -64,8 +66,8 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="">Samples pages<span class="sub_arrow"></span></a>
-                                    <ul class="depth3 none">
+                                    <a href="javascript:void(0)">Samples pages<span class="arrow_sub"></span></a>
+                                    <ul class="depth3">
                                         <li><a href="">No sidebar</a></li>
                                         <li><a href="">Right sidebar</a></li>
                                         <li><a href="">Left sidebar</a></li>
@@ -76,8 +78,8 @@
                             </ul>
                         </li>
                         <li class="menu">
-                            <a class="menu_project" href="">PROJECTS</a>
-                            <ul class="sub_projects none">
+                            <a class="menu_project" href="avascript:void(0)">PROJECTS</a>
+                            <ul class="sub_projects">
                                 <li><a href="">Projects pagination</a></li>
                                 <li><a href="">Projects filter</a></li>
                                 <li><a href="">Projects fullwidth</a></li>
@@ -85,14 +87,14 @@
                             </ul>
                         </li>
                         <li class="menu">
-                            <a class="menu_news" href="">NEWS</a>
-                            <ul class="sub_news none">
+                            <a class="menu_news" href="avascript:void(0)">NEWS</a>
+                            <ul class="sub_news">
                                 <li><a href="">news right sidebar</a></li>
                                 <li><a href="">news left sidebar</a></li>
                                 <li><a href="">news no sidebar</a></li>
                                 <li>
-                                    <a href="">Single news<span class="sub_arrow"></span></a>
-                                    <ul class="depth3 none">
+                                    <a href="javascript:void(0)">Single news<span class="arrow_sub"></span></a>
+                                    <ul class="depth3">
                                         <li><a href="">Right sidebar</a></li>
                                         <li><a href="">Leftt sidebar</a></li>
                                         <li><a href="">No sidebar</a></li>
@@ -104,7 +106,7 @@
                             <a class="menu_contact" href="">CONTACT</a>
                         </li>
                         <li class="menu">
-                            <a class="menu_shortcodes" href="">SHORTCODES</a>
+                            <a class="menu_shortcodes" href="avascript:void(0)">SHORTCODES</a>
                             <ul class="sub_shortcodes none">
                                 <li><a href="">Grid</a></li>
                                 <li><a href="">Alerts</a></li>

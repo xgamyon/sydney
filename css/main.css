@@ -111,6 +111,7 @@ header{
 /*nav*/
 .nav_cont{
     width: 100%;
+    background-color: #fff;
 }
 nav{
     position: relative;
@@ -165,6 +166,7 @@ nav .menu .menu_home{
     top:106px;
     left: 30px;
     z-index: 10;
+    display: none;
 }
 [class^="sub_"] li{
     position: relative;
@@ -199,7 +201,7 @@ nav .menu .menu_home{
     margin-right: 15px;
     border: 1px #2b3542 solid;
 }
-.sub_arrow{
+.arrow_sub{
     position: absolute;
     top: 18px;
     left: 165px;
@@ -218,6 +220,7 @@ nav .menu .menu_home{
     position: absolute;
     top: -2px;
     left: 188px;
+    display: none;
 }
 .sub_shortcodes{
     position: absolute;
@@ -234,6 +237,28 @@ nav .menu .menu_home{
 .sub_shortcodes li:nth-child(4){
     border-top: 2px #c8bba1 solid;
 }
+
+
+/*스크롤시 메뉴바*/
+.nav_fixed{
+    position: fixed;
+    top: 0px;
+    height: 66px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14);
+    z-index: 10;
+}
+.nav_fixed nav .menu [class^="menu_"]{
+    height: 66px;
+    line-height: 66px;
+}
+.nav_fixed nav .menu [class^="sub_"]{
+    top: 66px;
+}
+.nav_fixed nav .logo a{
+    top: 10px;
+}
+
 
 
 /*메인 이미지*/
