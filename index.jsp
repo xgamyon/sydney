@@ -178,7 +178,7 @@
                 </li> --%>
                 <li>
                     <img src="images/image-1.jpg" alt="">
-                    <a class="pop_bt" href="">WHY CHOOSE US</a>
+                    <a class="pop_bt" href="javascript:void(0)">WHY CHOOSE US</a>
                     <div class="banner_pop">
                         <ul>
                             <li><strong>WHY CHOOSE US</strong></li>
@@ -188,12 +188,12 @@
                                 tincidunt eget. Duis vitae posuere mi.</span></li>
                             <li><a href="#">READ MORE<span class="pop_arrow">→</span></a></li>
                         </ul>
-                        <a class="close" href="">X</a>
+                        <a class="close" href="javascript:void(0)">X</a>
                     </div>
                 </li>
                 <li>
                     <img src="images/image-2.jpg" alt="">
-                    <a class="pop_bt" href="">INVESTMENT PROJECTS</a>
+                    <a class="pop_bt" href="javascript:void(0)">INVESTMENT PROJECTS</a>
                     <div class="banner_pop">
                         <ul>
                             <li><strong>INVESTMENT PROJECTS</strong></li>
@@ -203,12 +203,12 @@
                                 sapien non semper.</span></li>
                             <li><a href="#">READ MORE<span class="pop_arrow">→</span></a></li>
                         </ul>
-                        <a class="close" href="">X</a>
+                        <a class="close" href="javascript:void(0)">X</a>
                     </div>
                 </li>
                 <li>
                     <img src="images/image-3.jpg" alt="">
-                    <a class="pop_bt" href="">THE BEST QUALITY</a>
+                    <a class="pop_bt" href="javascript:void(0)">THE BEST QUALITY</a>
                     <div class="banner_pop">
                         <ul>
                             <li><strong>THE BEST QUALITY</strong></li>
@@ -218,7 +218,7 @@
                                 Maecenas sit amet tempor erat eget ultrices.</span></li>
                             <li><a href="#">READ MORE<span class="pop_arrow">→</span></a></li>
                         </ul>
-                        <a class="close" href="">X</a>
+                        <a class="close" href="javascript:void(0)">X</a>
                     </div>
                 </li>
             </ul>

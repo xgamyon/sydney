@@ -1,26 +1,13 @@
 @media screen and (max-width: 1199px){
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    header,
+    section{
+        top:-37px;
+        transition: 0.5s;
+    }
+    .search{
+        margin-top: -10px;
+    }
 
 
 

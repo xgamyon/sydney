@@ -20,10 +20,10 @@ var menu = {
             $(this).parent().find('.depth3').slideToggle();
         }
 
-        $('[class^="menu_"]').on('mouseenter',submenu_open)
-        $('[class^="menu_"]').on('mouseleave',submenu_close)
-        $('[class^="sub_"] li a').on('mouseenter',depth3_open)
-        $('[class^="sub_"] li a').on('mouseleave',depth3_close)
+        $('[class^="menu_"]').on('mouseenter', submenu_open)
+        $('[class^="menu_"]').on('mouseleave', submenu_close)
+        $('[class^="sub_"] li a').on('mouseenter', depth3_open)
+        $('[class^="sub_"] li a').on('mouseleave', depth3_close)
     },
 
     // 메뉴바 상단 스크롤
@@ -51,8 +51,38 @@ var menu = {
     }
 }
 
+// 메인 배너 3개
+var main_banner = {
+    event:function(){
+        var open = function(){
+            $(this).parent().find('.banner_pop').css({
+                'display': 'block',
+                'top': '262px'
+            }).stop().animate({
+                'top': '0px'
+            },300,function(){
+                // 콜백함수: css 이후에 주기 위해서 사용함, 애니메이트 함수가 종료되었을때 호출된다.
+                $(this).parent().find('.pop_bt').css('display', 'none')
+            });
+        }
+        var close = function(){
+            $(this).parent().parent().find('.pop_bt').css('display', 'block')
+            // 일단 먼저 .pop_bt 나타나게 하고..
 
-
+            $(this).parent('.banner_pop').css({
+                'display': 'block',
+                'top': '0px'
+            }).stop().animate({
+                'top': '262px'
+            },300,function(){
+                // 콜백함수: css 이후에 주기 위해서 사용함, 애니메이트 함수가 종료되었을때 호출된다.
+                $('.close').parent('.banner_pop').css('display','none')
+            });
+        }
+        $('.pop_bt').on('click', open)
+        $('.close').on('click', close)
+    }
+}
 
 
 
@@ -64,4 +94,5 @@ var menu = {
 $(function(){
     menu.event();
     menu.scroll();
+    main_banner.event();
 })
