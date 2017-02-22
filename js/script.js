@@ -29,24 +29,53 @@ var menu = {
     // 메뉴바 상단 스크롤
     scroll:function(){
         var top = $('.nav_cont').offset().top;
+
         $(window).scroll(function(){
-            if($(document).scrollTop() > top+100){
-                if( start==true){
-                    $('.nav_cont').css({
-                        'top':"-70px"
-                    }).stop().animate({
-                        'top':"0px"
-                    }).addClass('nav_fixed')
-                    start=false;
-                };
-            }else{
-                $('.nav_cont').css({
+        	var sct = $(this).scrollTop();
+        	var nav = $('.nav_cont');
+            console.log(sct);
+            // console.log(nav);
+
+        	if( sct > 100 && !nav.is('.fix') ){ // 가상으로 fix라는 클래스를 만든것
+        		nav.addClass('fix');
+        		nav.css({
+                    'top':"-70px"
+                }).stop().animate({
+                    'top':"0px"
+                }).addClass('nav_fixed');
+        	}else if(sct < 100 && nav.is('.fix')){
+        		nav.removeClass('fix');
+        		nav.css({
                     'top':"0px"
                 }).stop().animate({
                     'top':"-70px"
-                }).removeClass('nav_fixed');
-                start=true;
-            }
+                },function(){
+                    nav.removeClass('nav_fixed');
+                })
+        	}
+
+
+// 초기 방법
+
+//            if($(this).scrollTop() > top+100){
+//
+//                if( start==true){
+//                    $('.nav_cont').css({
+//                        'top':"-70px"
+//                    }).stop().animate({
+//                        'top':"0px"
+//                    }).addClass('nav_fixed')
+//                    start=false;
+//                };
+//            }else{
+//                $('.nav_cont').css({
+//                    'top':"0px"
+//                }).stop().animate({
+//                    'top':"-70px"
+//                }).removeClass('nav_fixed');
+//                start=true;
+//            }
+
         })
     }
 }
