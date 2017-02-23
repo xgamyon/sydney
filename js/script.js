@@ -1,5 +1,5 @@
 // 메뉴바
-var start = true;  //메뉴바 상단 스크롤 에서 쓰임
+// var start = true;  //메뉴바 상단 스크롤 맨처음 방법 에서 쓰임
 var menu = {
     // 메뉴바 슬라이드
     event:function(){
@@ -33,29 +33,27 @@ var menu = {
         $(window).scroll(function(){
         	var sct = $(this).scrollTop();
         	var nav = $('.nav_cont');
-            console.log(sct);
-            // console.log(nav);
 
-        	if( sct > 100 && !nav.is('.fix') ){ // 가상으로 fix라는 클래스를 만든것
+        	if( sct > nav.height()+42 && !nav.is('.fix')){ // 가상으로 fix라는 클래스를 만든것
         		nav.addClass('fix');
         		nav.css({
                     'top':"-70px"
                 }).stop().animate({
                     'top':"0px"
-                }).addClass('nav_fixed');
-        	}else if(sct < 100 && nav.is('.fix')){
+                }).addClass('nav_fixed'); // 동시 실행
+
+        	}else if(sct < nav.height()+42 && nav.is('.fix')){
         		nav.removeClass('fix');
         		nav.css({
                     'top':"0px"
                 }).stop().animate({
                     'top':"-70px"
                 },function(){
-                    nav.removeClass('nav_fixed');
+                    nav.removeClass('nav_fixed'); //애니메이트 끝나고 실행(콜백함수)
                 })
         	}
 
-
-// 초기 방법
+// 메뉴바 상단 스크롤 맨처음 방법
 
 //            if($(this).scrollTop() > top+100){
 //
@@ -77,6 +75,16 @@ var menu = {
 //            }
 
         })
+    }
+}
+
+// 모바일 메뉴
+var mobile_menu = {
+    event:function(){
+        var m_open = function(){
+            $(this).parent().find('ul').slideToggle();
+        }
+        $('.mobile_menu').on('click', m_open)
     }
 }
 
@@ -123,5 +131,6 @@ var main_banner = {
 $(function(){
     menu.event();
     menu.scroll();
+    mobile_menu.event();
     main_banner.event();
 })

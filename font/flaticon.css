@@ -22,7 +22,7 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
@@ -37,6 +37,7 @@ margin-left: 20px;
 .flaticon-instagram-logo:before { content: "\f105"; }
 .flaticon-interface:before { content: "\f106"; }
 .flaticon-location:before { content: "\f107"; }
+.flaticon-menu:before { content: "\f108"; }
 .flaticon-musica-searcher:before { content: "\f108"; }
 .flaticon-pinterest-logo:before { content: "\f109"; }
 .flaticon-shape:before { content: "\f10a"; }

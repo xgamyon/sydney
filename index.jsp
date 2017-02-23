@@ -37,6 +37,7 @@
             <div class="nav_cont">
                 <nav>
                     <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="sydney"></a></div>
+                    <a class="mobile_menu" href="javascript:void(0);"><i class="flaticon-menu"></i></a>
                     <ul>
                         <li class="menu">
                             <a class="menu_home" href="javascript:void(0)">HOME</a>
@@ -169,13 +170,6 @@
         </div>
         <div class="main_banner">
             <ul>
-                <%-- <li>
-                    <img src="images/image-1.jpg" alt="">
-                    <a class="pop_bt" id="op_cl" href="#popup">WHY CHOOSE US</a>
-                    <div class="banner_pop" id="popup">
-                        <a class="close" href="#op_cl">X</a>
-                    </div>
-                </li> --%>
                 <li>
                     <img src="images/image-1.jpg" alt="">
                     <a class="pop_bt" href="javascript:void(0)">WHY CHOOSE US</a>

@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'Roboto', 'Arial', 'sans-serif'
 }
+html,body{
+    width: 100%;
+}
 li{
     list-style: none;
 }
@@ -135,14 +138,33 @@ nav .logo{
     width: 135px;
     height: 46px;
 }
+/*모바일 메뉴*/
+nav .mobile_menu{
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.flaticon-menu:before{
+    font-size: 30px;
+    font-weight: 700;
+    color: #c8bba1;
+    margin-left: 0;
+}
+
+
 nav > ul{
     float: right;
 }
 nav .menu{
+    display: block;
     float: left;
     position: relative;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 nav .menu [class^="menu_"]{
     display: block;
@@ -267,46 +289,6 @@ nav .menu .menu_home{
 }
 
 
-
-/*메인 이미지*/
-section{
-    position: relative;
-    top: 0;
-    width: 100%;
-    transition: 0.5s;
-}
-.main_slide{
-    position: relative;
-    top: 0;
-    left:0;
-    width: 100%;
-    max-height: 680px;
-    overflow: hidden;
-}
-[class^="main_img"]{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-.main_img1{
-    background-image: url('../images/bg-slide-1.jpg');
-}
-.main_img2{
-    background-image: url('../images/bg-slide-2.jpg');
-}
-.main_img3{
-    background-image: url('../images/bg-slide-3.jpg');
-}
-.main_img_bg{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(4, 20, 43, 0.75);
-    z-index: 1;
-}
-
-
 /*메인 이미지 위치 버튼*/
 .img_num{
     position: absolute;
@@ -366,6 +348,52 @@ section{
 }
 
 
+/*메인 이미지*/
+section{
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.main_slide{
+    position: relative;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    max-height: 680px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+[class^="slide_"] img{
+    width: 100%;
+    max-width: 640px;
+}
+[class^="main_img"]{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.main_img1{
+    background-image: url('../images/bg-slide-1.jpg');
+}
+.main_img2{
+    background-image: url('../images/bg-slide-2.jpg');
+}
+.main_img3{
+    background-image: url('../images/bg-slide-3.jpg');
+}
+.main_img_bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 20, 43, 0.75);
+    z-index: 1;
+}
+
+
 /*메인 이미지 1*/
 [class^="slide_"]{
     position: relative;
@@ -373,6 +401,7 @@ section{
 }
 .slide_1{
     left: 53%;
+    max-width: 630px;
 }
 .slide_1_line{
     position: absolute;
@@ -444,10 +473,7 @@ section{
     margin: 100px auto;
     overflow: hidden;
 }
-.main_banner ul{
-    margin: 0 auto;
-}
-.main_banner ul li{
+.main_banner > ul > li{
     position: relative;
     float: left;
     width: 33.333333%;
@@ -456,16 +482,16 @@ section{
     overflow: hidden;
     margin: 0 15px;
 }
-.main_banner ul li:first-child{
+.main_banner > ul > li:first-child{
     padding-left: 0;
 }
-.main_banner ul li:last-child{
+.main_banner > ul > li:last-child{
     padding-right: 0;
 }
-.main_banner ul li img{
+.main_banner > ul > li > img{
     width: 100%;
 }
-.main_banner ul li .pop_bt{
+.main_banner > ul > li .pop_bt{
     position: absolute;
     bottom: 0;
     display: block;
@@ -478,7 +504,7 @@ section{
     background-color: rgba(4, 20, 43, 0.9);
     transition: background 0.3s;
 }
-.main_banner ul li .pop_bt:hover{
+.main_banner > ul > li .pop_bt:hover{
     background-color: #c8bba1;
 }
 
@@ -494,23 +520,6 @@ section{
     background-color: rgba(4, 20, 43, 0.9);
 }
 
-
-/*.banner_pop:target{
-    animation: open 1s;
-}
-#op_cl:target + .banner_pop{
-    animation: close 1s;
-}
-@keyframes open{
-    from{ top:262px;}
-    to{ top:0;}
-}
-@keyframes close{
-    from{ top:0;}
-    to{ top: 262px;}
-}*/
-
-
 .banner_pop .close{
     position: absolute;
     top: 20px;
@@ -521,6 +530,7 @@ section{
     line-height: 20px;
     text-align: center;
     color: #c8bba1;
+    z-index: 10;
 }
 .banner_pop ul li{
     width: 80%;
@@ -529,7 +539,7 @@ section{
 }
 .banner_pop ul li:last-child{
     position: absolute;
-    bottom: 25px;
+    bottom: 5%;
 }
 .banner_pop strong{
     color: #fff;
