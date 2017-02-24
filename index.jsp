@@ -108,7 +108,7 @@
                         </li>
                         <li class="menu">
                             <a class="menu_shortcodes" href="avascript:void(0)">SHORTCODES</a>
-                            <ul class="sub_shortcodes none">
+                            <ul class="sub_shortcodes">
                                 <li><a href="">Grid</a></li>
                                 <li><a href="">Alerts</a></li>
                                 <li><a href="">Accordions</a></li>

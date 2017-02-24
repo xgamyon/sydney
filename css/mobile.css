@@ -3,7 +3,6 @@
     header,
     section{
         top:-37px;
-        overflow: hidden;
         transition: 0.5s;
     }
     .search{
@@ -33,8 +32,8 @@
         font-weight: 700;
         color: #fff;
         background-color: #04142b;
-        border-left: 1px #2b3542 solid;
-        border-right: 1px #2b3542 solid;
+        border-left: none;
+        border-right: none;
         border-bottom: 1px #2b3542 solid;
         transition: border-bottom 0.3s;
         transition: color 0.3s;
@@ -42,6 +41,66 @@
     nav .menu [class^="menu_"]:hover{
         color: #c8bba1;
     }
+
+
+    /* 모바일 서브메뉴 */
+    [class^="sub_"]{
+        position: relative;
+        top:0;
+        left: 0;
+    }
+    [class^="sub_"] li{
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        overflow: hidden;
+    }
+    [class^="sub_"] li:first-child{
+        border-top:  none;
+    }
+    [class^="sub_"] li a{
+        display: block;
+        width: 100%;
+    }
+    .arrow_sub{
+        position: absolute;
+        top: 18px;
+        left: 95%;
+        width: 5px;
+        height: 10px;
+        background-image: url('../images/menu_arrow.png');
+    }
+    .depth3{
+        position: relative;
+        top: 0px;
+        left: 0;
+    }
+    [class^="sub_"] .depth3 li a::before{
+        content: "";
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin-left: 20px;
+        margin-right: 15px;
+        border: 1px #2b3542 solid;
+    }
+    .sub_shortcodes{
+        position: relative;
+        left: 1px;
+        width: 100%;
+    }
+    .sub_shortcodes li{
+        float: none;
+        width: 100%;
+    }
+    .sub_shortcodes li:nth-child(2),
+    .sub_shortcodes li:nth-child(3),
+    .sub_shortcodes li:nth-child(4){
+        border-top: none;
+    }
+
 
 
 
