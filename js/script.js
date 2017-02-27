@@ -25,27 +25,30 @@ var menu = {
         $('[class^="sub_"] li a').on('mouseleave', depth3_close)
 
 
-        // // 기존 메뉴를 모바일 상태일때 클릭으로 바꿈
-        // var m_open = function(){
-        //     $(this).parent().find('[class^="sub_"]').slideToggle();
-        // }
-        //
-        //
-        //
-        // $( window ).resize(function() {
-        //     var win_width = $("body").innerWidth();
-        //     if(win_width <= 1199){
-        //         console.log('모바일');
-        //         $('[class^="menu_"]').on('click', m_open)
-        //         $('[class^="sub_"] li a').on('click', depth3_open)
-        //     }else{
-        //         console.log('데스크탑');
-        //         $('[class^="menu_"]').on('mouseenter', submenu_open)
-        //         $('[class^="menu_"]').on('mouseleave', submenu_close)
-        //         $('[class^="sub_"] li a').on('mouseenter', depth3_open)
-        //         $('[class^="sub_"] li a').on('mouseleave', depth3_close)
-        //     }
-        // })
+         
+        // 대안제시 
+         var size = 'none';
+	     
+ 	    $(window).resize(function(){
+ 	    	
+ 	    	size = $('.mobile_menu').css('display');
+ 	    	
+ 	    	if(size == "none"){
+ 	    		
+ 	    		//대상.on("hover")
+ 	    		//대상.off("click")
+ 	    		//display  여부
+ 	    		
+ 	    		
+ 	    	}else if(size == "block"){
+ 	    		
+ 	    		//대상.on("hover")
+ 	    		//대상.off("click")
+ 	    		//display  여부
+ 	    	}
+ 	    	
+ 	    }) 
+         
 
 
     },
