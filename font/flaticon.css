@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 10/02/2017 09:54
+  	Creation date: 27/02/2017 10:03
   	*/
 
 @font-face {
@@ -38,13 +38,13 @@ margin-left: 20px;
 .flaticon-interface:before { content: "\f106"; }
 .flaticon-location:before { content: "\f107"; }
 .flaticon-menu:before { content: "\f108"; }
-.flaticon-musica-searcher:before { content: "\f108"; }
-.flaticon-pinterest-logo:before { content: "\f109"; }
-.flaticon-shape:before { content: "\f10a"; }
-.flaticon-social:before { content: "\f10b"; }
-.flaticon-technology:before { content: "\f10c"; }
-.flaticon-technology-1:before { content: "\f10d"; }
-.flaticon-technology-2:before { content: "\f10e"; }
-.flaticon-technology-3:before { content: "\f10f"; }
-.flaticon-twitter:before { content: "\f110"; }
-.flaticon-wrench:before { content: "\f111"; }
+.flaticon-musica-searcher:before { content: "\f109"; }
+.flaticon-pinterest-logo:before { content: "\f10a"; }
+.flaticon-shape:before { content: "\f10b"; }
+.flaticon-social:before { content: "\f10c"; }
+.flaticon-technology:before { content: "\f10d"; }
+.flaticon-technology-1:before { content: "\f10e"; }
+.flaticon-technology-2:before { content: "\f10f"; }
+.flaticon-technology-3:before { content: "\f110"; }
+.flaticon-twitter:before { content: "\f111"; }
+.flaticon-wrench:before { content: "\f112"; }

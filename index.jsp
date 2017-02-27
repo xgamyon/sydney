@@ -17,9 +17,16 @@
         <div class="header_top">
             <div class="container">
                 <ul>
-                    <li><i class="flaticon-location"></i><span>4124 Barnes Street, Sanford, FL 32771</span></li>
-                    <li><i class="flaticon-clock"></i><span>Open: Mon - Sat <span class="c8bba1">08:00 - 19:00.</span> Sunday <span class="c8bba1">CLOSED</span></span></li>
-                    <li><i class="flaticon-technology"></i><span> 1-800-<span class="c8bba1">SYDNEY</span>-2171</span></li>
+                    <li>
+                        <i class="flaticon-location"></i>
+                        <span>4124 Barnes Street, Sanford, FL 32771</span></li>
+                    <li>
+                        <i class="flaticon-clock"></i>
+                        <span>Open: Mon - Sat <span class="c8bba1">08:00 - 19:00.</span>
+                        Sunday <span class="c8bba1">CLOSED</span></span></li>
+                    <li>
+                        <i class="flaticon-technology"></i>
+                        <span> 1-800-<span class="c8bba1">SYDNEY</span>-2171</span></li>
                     <li>
                         <div class="search">
                             <form action="" name="search" method="get">
@@ -145,7 +152,9 @@
                         <div class="slide_1_title">
                             <cite>Protect your assets</cite>
                             <span class="slide_1_sub">Register today.</span>
-                            <span class="slide_1_sub2"><span class="c8bba1">CALL NOW </span>1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
+                            <span class="slide_1_sub2">
+                                <span class="c8bba1">CALL NOW </span>
+                                1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
                         </div>
                     </div>
                 </li>
@@ -216,6 +225,70 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="services">
+            <div class="main_title">
+                <h2>SERVICES</h2>
+                <span>you know what we offer</span>
+            </div>
+            <div class="services_cont">
+                <ul>
+                    <li>
+                        <i class="flaticon-interface"></i>
+                        <div class="services_box">
+                            <a href="#">Business Services<br/>Consulting</a>
+                            <span>Lorem ipsum dolor sit amet, consectet ur adipiscing
+                                elit. Donec nisl urna, porta eu vulputate eu,
+                                scelerisque vel.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-shape"></i>
+                        <div class="services_box">
+                            <a href="#">Financial Services<br/>Management</a>
+                            <span>Elit dronec nisl urna, porta eu vulputate eu,
+                                scelerisque vel turpis. Nullam nisl urnaet quam
+                                justo dolor.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-technology-2"></i>
+                        <div class="services_box">
+                            <a href="#">Customer Service<br/>Team</a>
+                            <span>Sit amet, consectetur adipiscing elit.
+                                Donec nisl urna, porta eu vulputate eu, scelerisque
+                                vel turpis ipsum.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-technology-1"></i>
+                        <div class="services_box">
+                            <a href="#">Business Competitive<br/>Rates</a>
+                            <span>Vivamus cursus lacus vel sollicitudin porta.
+                                Quisque quam metus, pretium in felis id, suscipit
+                                consectetur.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-computer"></i>
+                        <div class="services_box">
+                            <a href="#">Company Profile<br/>Book</a>
+                            <span>Nam condimentum tellus quam, in auctor libero egestas sed.
+                                In facilisis nisl id enim congue dolor sit.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-technology-3"></i>
+                        <div class="services_box">
+                            <a href="#">Investor General<br/>Strategy</a>
+                            <span>Praesent dolor neque, commodo et risus non,
+                                tristique interdum urna. Quisque fringilla velit
+                                dui at duis sed.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 </body>

@@ -195,20 +195,23 @@
 
     /*메인 배너*/
     .main_banner{
-        max-width: 1000px;
+        width: 95%;
         margin: 50px auto;
     }
     .main_banner > ul > li{
         width: 31%;
-        margin: 15px 15px 0 0;
+        margin: 0 10px;
+    }
+    .main_banner > ul > li:last-child{
+        margin-right: 0;
     }
     @media screen and (max-width: 875px){
         .main_banner{
             max-width: 875px;
         }
-        .main_banner > ul{
-            margin: 0 auto;
-            width: 95%;
+        .main_banner > ul li{
+            margin-top: 15px;
+            margin-left: 0;
         }
         .main_banner > ul > li{
             position: relative;
