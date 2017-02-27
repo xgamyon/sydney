@@ -11,44 +11,62 @@ var menu = {
         var submenu_close = function(){
             $(this).children().find('[class^="sub_"]').slideToggle();
         }
-        var depth3_open = function(){
-            $(this).parent().find('.depth3').slideToggle().parent().siblings().find('.depth3').css({
+        var depth2_open = function(){
+            $(this).parent().find('.depth2').slideToggle().parent().siblings().find('.depth3').css({
                 'display':'none'
             });
         }
-        var depth3_close = function(){
+        var depth2_close = function(){
             $(this).parent().find('.depth3').slideToggle();
         }
-        $('[class^="menu_"]').on('mouseenter', submenu_open)
-        $('[class^="menu_"]').on('mouseleave', submenu_close)
-        $('[class^="sub_"] li a').on('mouseenter', depth3_open)
-        $('[class^="sub_"] li a').on('mouseleave', depth3_close)
+        // $('[class^="menu_"]').on('mouseenter', submenu_open)
+        // $('[class^="menu_"]').on('mouseleave', submenu_close)
+        // $('[class^="sub_"] li a').on('mouseenter', depth2_open)
+        // $('[class^="sub_"] li a').on('mouseleave', depth2_close)
 
 
-         
-        // 대안제시 
-         var size = 'none';
-	     
+
+        var size = 'none';
  	    $(window).resize(function(){
- 	    	
+
  	    	size = $('.mobile_menu').css('display');
- 	    	
+
  	    	if(size == "none"){
- 	    		
+                console.log('none')
  	    		//대상.on("hover")
+                $('[class^="menu_"]').on({
+                    'mouseenter' : submenu_open,
+                    'mouseleave' : submenu_close
+                })
+                $('[class^="sub_"] li a').on({
+                    'mouseenter' : depth2_open,
+                    'mouseleave' : depth2_close
+                })
  	    		//대상.off("click")
+                $('[class^="menu_"]').off({
+                    'click' : submenu_open,
+                    'click' : submenu_close
+                })
+                $('[class^="sub_"] li a').off({
+                    'click' : depth2_open,
+                    'click' : depth2_close
+                })
  	    		//display  여부
- 	    		
- 	    		
+                $('nav ul').css('display','block').children().find('ul').css('display','none')
+
  	    	}else if(size == "block"){
- 	    		
+                console.log('block')
  	    		//대상.on("hover")
+                $('[class^="menu_"]').on('click', submenu_open)
+                $('[class^="sub_"] li a').on('click', depth2_open)
  	    		//대상.off("click")
+                $('[class^="menu_"]').off('mouseenter', submenu_open)
+                $('[class^="sub_"] li a').off('mouseenter', depth2_open)
  	    		//display  여부
  	    	}
- 	    	
- 	    }) 
-         
+
+ 	    })
+
 
 
     },
@@ -109,7 +127,9 @@ var menu = {
 var mobile_menu = {
     event:function(){
         var m_open = function(){
-            $(this).parent().find('ul').slideToggle();
+            $(this).parent().find('ul').slideToggle()
+            .children().find('[class^="sub_"]').css('display', 'none')
+            .children().find('.depth2').css('display', 'none');
         }
         $('.mobile_menu').on('click', m_open)
     }

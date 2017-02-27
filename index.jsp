@@ -54,7 +54,7 @@
                             <ul class="sub_page">
                                 <li>
                                     <a href="javascript:void(0)">About<span class="arrow_sub"></span></a>
-                                    <ul class="depth3">
+                                    <ul class="depth2">
                                         <li><a href="">About us</a></li>
                                         <li><a href="">Careers</a></li>
                                         <li><a href="">History</a></li>
@@ -65,7 +65,7 @@
                                 <li><a href="">Pricing tables</a></li>
                                 <li>
                                     <a href="javascript:void(0)">Special pages<span class="arrow_sub"></span></a>
-                                    <ul class="depth3">
+                                    <ul class="depth2">
                                         <li><a href="">Error 404</a></li>
                                         <li><a href="">Maintenance</a></li>
                                         <li><a href="">Coming soon</a></li>
@@ -75,7 +75,7 @@
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">Samples pages<span class="arrow_sub"></span></a>
-                                    <ul class="depth3">
+                                    <ul class="depth2">
                                         <li><a href="">No sidebar</a></li>
                                         <li><a href="">Right sidebar</a></li>
                                         <li><a href="">Left sidebar</a></li>
@@ -102,7 +102,7 @@
                                 <li><a href="">news no sidebar</a></li>
                                 <li>
                                     <a href="javascript:void(0)">Single news<span class="arrow_sub"></span></a>
-                                    <ul class="depth3">
+                                    <ul class="depth2">
                                         <li><a href="">Right sidebar</a></li>
                                         <li><a href="">Leftt sidebar</a></li>
                                         <li><a href="">No sidebar</a></li>

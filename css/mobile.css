@@ -70,12 +70,12 @@
         height: 10px;
         background-image: url('../images/menu_arrow.png');
     }
-    .depth3{
+    .depth2{
         position: relative;
         top: 0px;
         left: 0;
     }
-    [class^="sub_"] .depth3 li a::before{
+    [class^="sub_"] .depth2 li a::before{
         content: "";
         position: relative;
         top: -2px;
