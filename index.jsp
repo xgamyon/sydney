@@ -293,6 +293,12 @@
             <div class="main_img_bg"></div>
             <div class="science_title">
                 <h2>Statistics is the <span>grammar<br/>of science.</span></h2>
+                <ul>
+                    <li><span class="timer">313</span><span>Customers</span></li>
+                    <li><span class="timer">18</span><span>Awards</span></li>
+                    <li><span class="timer">1097</span><span>Projects</span></li>
+                    <li><span class="timer">57</span><span>Members</span></li>
+                </ul>
             </div>
         </div>
     </section>

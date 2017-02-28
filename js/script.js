@@ -3,29 +3,43 @@
 var menu = {
     // 메뉴바 슬라이드
     event:function(){
+        // 호버시
         var submenu_open = function(){
-            $(this).parent().find('[class^="sub_"]').slideToggle().parent().siblings().find('[class^="sub_"]').css({
+            $(this).parent().find('[class^="sub_"]').slideDown()
+            .parent().siblings().find('[class^="sub_"]').css({
                 'display':'none'
             });
         }
         var submenu_close = function(){
-            $(this).children().find('[class^="sub_"]').slideToggle();
+            $(this).find('[class^="sub_"]').slideUp();
         }
-        var depth2_open = function(){
-            $(this).parent().find('.depth2').slideToggle().parent().siblings().find('.depth3').css({
+        var depth2 = function(){
+            $(this).parent().find('.depth2').slideDown()
+            .parent().siblings().find('.depth2').css({
                 'display':'none'
             });
         }
-        var depth2_close = function(){
-            $(this).parent().find('.depth3').slideToggle();
+        $('[class^="menu_"]').on('mouseenter', submenu_open)
+        $('.menu').on('mouseleave', submenu_close)
+        $('[class^="sub_"] li a').on('mouseenter', depth2)
+
+
+        // 클릭시
+        var submenu_open_click = function(){
+            $(this).parent().find('[class^="sub_"]').slideToggle()
+            .parent().siblings().find('[class^="sub_"]').css({
+                'display':'none'
+            });
         }
-        // $('[class^="menu_"]').on('mouseenter', submenu_open)
-        // $('[class^="menu_"]').on('mouseleave', submenu_close)
-        // $('[class^="sub_"] li a').on('mouseenter', depth2_open)
-        // $('[class^="sub_"] li a').on('mouseleave', depth2_close)
+        var depth2_click = function(){
+            $(this).parent().find('.depth2').slideToggle()
+            .parent().siblings().find('.depth2').css({
+                'display':'none'
+            });
+        }
 
 
-
+        // pc, 모바일 이동시 호버, 클릭상태 변경
         var size = 'none';
  	    $(window).resize(function(){
 
@@ -33,41 +47,36 @@ var menu = {
 
  	    	if(size == "none"){
                 console.log('none')
+
  	    		//대상.on("hover")
-                $('[class^="menu_"]').on({
-                    'mouseenter' : submenu_open,
-                    'mouseleave' : submenu_close
-                })
-                $('[class^="sub_"] li a').on({
-                    'mouseenter' : depth2_open,
-                    'mouseleave' : depth2_close
-                })
+                $('[class^="menu_"]').on('mouseenter', submenu_open)
+                $('.menu').on('mouseleave', submenu_close)
+                $('[class^="sub_"] li a').on('mouseenter', depth2)
+
  	    		//대상.off("click")
-                $('[class^="menu_"]').off({
-                    'click' : submenu_open,
-                    'click' : submenu_close
-                })
-                $('[class^="sub_"] li a').off({
-                    'click' : depth2_open,
-                    'click' : depth2_close
-                })
+                $('[class^="menu_"]').off('click', submenu_open_click)
+                $('[class^="sub_"] li a').off('click', depth2_click)
+
  	    		//display  여부
-                $('nav ul').css('display','block').children().find('ul').css('display','none')
+                $('nav ul').css('display','block')
+                .children().find('ul').css('display','none')
 
  	    	}else if(size == "block"){
                 console.log('block')
- 	    		//대상.on("hover")
-                $('[class^="menu_"]').on('click', submenu_open)
-                $('[class^="sub_"] li a').on('click', depth2_open)
- 	    		//대상.off("click")
+
+ 	    		//대상.on("click")
+                $('[class^="menu_"]').on('click', submenu_open_click)
+                $('[class^="sub_"] li a').on('click', depth2_click)
+
+ 	    		//대상.off("hover")
                 $('[class^="menu_"]').off('mouseenter', submenu_open)
-                $('[class^="sub_"] li a').off('mouseenter', depth2_open)
+                $('.menu').off('mouseleave', submenu_close)
+                $('[class^="sub_"] li a').off('mouseenter', depth2)
+
  	    		//display  여부
                 $('nav ul').css('display','none')
  	    	}
-
  	    })
-
 
 
     },
@@ -86,7 +95,7 @@ var menu = {
                     'top':"-70px"
                 }).stop().animate({
                     'top':"0px"
-                }).addClass('nav_fixed'); // 동시 실행
+                },300).addClass('nav_fixed'); // 동시 실행
 
         	}else if(sct < nav.height()+42 && nav.is('.fix')){
         		nav.removeClass('fix');
@@ -94,13 +103,13 @@ var menu = {
                     'top':"0px"
                 }).stop().animate({
                     'top':"-70px"
-                },function(){
+                },300,function(){
                     nav.removeClass('nav_fixed'); //애니메이트 끝나고 실행(콜백함수)
                 })
         	}
 
 // 메뉴바 상단 스크롤 맨처음 방법
-
+//
 //            if($(this).scrollTop() > top+100){
 //
 //                if( start==true){
@@ -168,12 +177,6 @@ var main_banner = {
         $('.close').on('click', close)
     }
 }
-
-
-
-
-
-
 
 
 $(function(){
