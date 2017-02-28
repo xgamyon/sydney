@@ -563,7 +563,7 @@ section{
 }
 
 
-/*메인 서비스*/
+/*서비스*/
 .services{
     width: 95%;
     max-width: 1170px;
@@ -571,17 +571,18 @@ section{
     margin: 0 auto;
 }
 
-/*메인서비스 타이틀*/
-.main_title{
+
+/*서비스 타이틀*/
+.services_title{
     margin-bottom: 80px;
 }
-.main_title h2{
+.services_title h2{
     display: inline-block;
     font-size: 30px;
     font-weight: 700;
     color: #04142b;
 }
-.main_title h2:after{
+.services_title h2:after{
     content: "/";
     position: relative;
     bottom: -18px;
@@ -590,7 +591,7 @@ section{
     font-weight: 500;
     color: #c8bba1;
 }
-.main_title span{
+.services_title span{
     position: relative;
     bottom: -15px;
     display: inline-block;
@@ -598,7 +599,8 @@ section{
     font-weight: 500;
 }
 
-/*메인 서비스 컨텐츠*/
+
+/*서비스 컨텐츠*/
 .services_cont{
     overflow: hidden;
 }
@@ -632,6 +634,45 @@ section{
     color: #737373;
     line-height: 24px;
 }
+
+/*사이언스*/
+.science{
+    position: relative;
+    top: 0;
+    background-image: url('../images/bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 1px solid #f00;
+}
+
+
+/*사이언스 타이틀*/
+.science_title{
+    max-width: 1170px;
+    margin: 100px auto;
+    padding: 0 15px;
+    position: relative;
+    top: 0;
+    z-index: 5;
+    border: 1px solid #f00;
+}
+.science_title h2{
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: 500;
+    color: #fff;
+}
+.science_title h2 span{
+    font-size: inherit;
+    color: #c8bba1;
+}
+
+
+
+
+
+
 
 
 

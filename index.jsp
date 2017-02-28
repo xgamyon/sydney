@@ -227,7 +227,7 @@
             </ul>
         </div>
         <div class="services">
-            <div class="main_title">
+            <div class="services_title">
                 <h2>SERVICES</h2>
                 <span>you know what we offer</span>
             </div>
@@ -288,7 +288,12 @@
                     </li>
                 </ul>
             </div>
-
+        </div>
+        <div class="science">
+            <div class="main_img_bg"></div>
+            <div class="science_title">
+                <h2>Statistics is the <span>grammar<br/>of science.</span></h2>
+            </div>
         </div>
     </section>
 </body>

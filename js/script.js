@@ -63,6 +63,7 @@ var menu = {
                 $('[class^="menu_"]').off('mouseenter', submenu_open)
                 $('[class^="sub_"] li a').off('mouseenter', depth2_open)
  	    		//display  여부
+                $('nav ul').css('display','none')
  	    	}
 
  	    })
