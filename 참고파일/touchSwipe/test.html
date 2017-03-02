@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#bn_container").touchSwipe({
+					banner_wrp : $("#bn_wrapper"),
+					banner_lbt : $("#btn_l"),
+					banner_rbt : $("#btn_r"),
+					nv_btn : $(".nv_btn"),
+				});
+			});
+		</script>
+	</HEAD>
+	<BODY>
+		<div id="bn_container" style="height:200px;">
+			<div id="bn_wrapper">
+				<div style="background-color:orange; width:300px;height:170px;border:solid 1px;float:left;"></div>
+				<div style="background-color:yellow; width:300px;height:170px;border:solid 1px;float:left;"></div>
+				<div style="background-color:green; width:300px;height:170px;border:solid 1px;float:left;"></div>
+				<div style="background-color:blue; width:300px;height:170px;border:solid 1px;float:left;"></div>
+			</div>
+		</div>
+		
+		<div id="banner_navi">
+			<img id="btn_l" src="images/left.png" style="width:50px;" />
+			<img id="btn_r" src="images/right.png" style="width:50px;" />
+		</div>
+		
+		<ul id="nv_container">
+			<li class="nv_btn" style="width:50px;display:inline-block">1</li>
+			<li class="nv_btn" style="width:50px;display:inline-block">2</li>
+			<li class="nv_btn" style="width:50px;display:inline-block">3</li>
+			<li class="nv_btn" style="width:50px;display:inline-block">4</li>
+		</ul>
+	</BODY>
+</html>
+

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/mobile.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -227,7 +228,7 @@
             </ul>
         </div>
         <div class="services">
-            <div class="services_title">
+            <div class="cont_title">
                 <h2>SERVICES</h2>
                 <span>you know what we offer</span>
             </div>
@@ -294,10 +295,47 @@
             <div class="science_title">
                 <h2>Statistics is the <span>grammar<br/>of science.</span></h2>
                 <ul>
-                    <li><span class="timer">313</span><span>Customers</span></li>
-                    <li><span class="timer">18</span><span>Awards</span></li>
-                    <li><span class="timer">1097</span><span>Projects</span></li>
-                    <li><span class="timer">57</span><span>Members</span></li>
+                    <li><span class="timer" id="timer1">0</span><span>Customers</span></li>
+                    <li><span class="timer" id="timer2">0</span><span>Awards</span></li>
+                    <li><span class="timer" id="timer3">0</span><span>Projects</span></li>
+                    <li><span class="timer" id="timer4">0</span><span>Members</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="cont_title">
+                <h2>TESTIMONIALS</h2>
+                <span>what people say</span>
+            </div>
+            <div class="services_cont">
+                <ul>
+                    <li>
+                        <i class="flaticon-interface"></i>
+                        <div class="services_box">
+                            <a href="#">Business Services<br/>Consulting</a>
+                            <span>Lorem ipsum dolor sit amet, consectet ur adipiscing
+                                elit. Donec nisl urna, porta eu vulputate eu,
+                                scelerisque vel.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-shape"></i>
+                        <div class="services_box">
+                            <a href="#">Financial Services<br/>Management</a>
+                            <span>Elit dronec nisl urna, porta eu vulputate eu,
+                                scelerisque vel turpis. Nullam nisl urnaet quam
+                                justo dolor.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="flaticon-technology-2"></i>
+                        <div class="services_box">
+                            <a href="#">Customer Service<br/>Team</a>
+                            <span>Sit amet, consectetur adipiscing elit.
+                                Donec nisl urna, porta eu vulputate eu, scelerisque
+                                vel turpis ipsum.</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

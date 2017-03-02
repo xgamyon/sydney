@@ -5,34 +5,38 @@ var menu = {
     event:function(){
         // 호버시
         var submenu_open = function(){
-            $(this).parent().find('[class^="sub_"]').slideDown()
+            $(this).parent().find('[class^="sub_"]').slideDown(300)
             .parent().siblings().find('[class^="sub_"]').css({
                 'display':'none'
             });
         }
         var submenu_close = function(){
-            $(this).find('[class^="sub_"]').slideUp();
+            $(this).find('[class^="sub_"]').slideUp(300);
         }
         var depth2 = function(){
-            $(this).parent().find('.depth2').slideDown()
+            $(this).parent().find('.depth2').slideDown(300)
             .parent().siblings().find('.depth2').css({
                 'display':'none'
             });
         }
+        var depth2_close = function(){
+            $(this).children().find('ul').slideUp(300);
+        }
         $('[class^="menu_"]').on('mouseenter', submenu_open)
         $('.menu').on('mouseleave', submenu_close)
         $('[class^="sub_"] li a').on('mouseenter', depth2)
+        $('[class^="sub_"]').on('mouseleave', depth2_close)
 
 
         // 클릭시
         var submenu_open_click = function(){
-            $(this).parent().find('[class^="sub_"]').slideToggle()
+            $(this).parent().find('[class^="sub_"]').slideToggle(300)
             .parent().siblings().find('[class^="sub_"]').css({
                 'display':'none'
             });
         }
         var depth2_click = function(){
-            $(this).parent().find('.depth2').slideToggle()
+            $(this).parent().find('.depth2').slideToggle(300)
             .parent().siblings().find('.depth2').css({
                 'display':'none'
             });
@@ -52,6 +56,7 @@ var menu = {
                 $('[class^="menu_"]').on('mouseenter', submenu_open)
                 $('.menu').on('mouseleave', submenu_close)
                 $('[class^="sub_"] li a').on('mouseenter', depth2)
+                $('[class^="sub_"]').on('mouseleave', depth2_close)
 
  	    		//대상.off("click")
                 $('[class^="menu_"]').off('click', submenu_open_click)
@@ -72,6 +77,7 @@ var menu = {
                 $('[class^="menu_"]').off('mouseenter', submenu_open)
                 $('.menu').off('mouseleave', submenu_close)
                 $('[class^="sub_"] li a').off('mouseenter', depth2)
+                $('[class^="sub_"]').off('mouseleave', depth2_close)
 
  	    		//display  여부
                 $('nav ul').css('display','none')
@@ -83,7 +89,7 @@ var menu = {
 
     // 메뉴바 상단 스크롤
     scroll:function(){
-        var top = $('.nav_cont').offset().top;
+        // var top = $('.nav_cont').offset().top;
 
         $(window).scroll(function(){
         	var sct = $(this).scrollTop();
@@ -95,7 +101,7 @@ var menu = {
                     'top':"-70px"
                 }).stop().animate({
                     'top':"0px"
-                },300).addClass('nav_fixed'); // 동시 실행
+                },300).addClass('nav_fixed'); // 동시에 실행됨
 
         	}else if(sct < nav.height()+42 && nav.is('.fix')){
         		nav.removeClass('fix');
