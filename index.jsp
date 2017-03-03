@@ -12,6 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <%-- 슬라이드 배너 --%>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script src="js/jquery.bxslider.js"></script>
 </head>
 <body>
     <header>
@@ -144,7 +147,7 @@
         <div class="main_slide">
             <div class="main_img_bg"></div>
             <ul>
-                <li>
+                <%-- <li>
                     <div class="main_img1">
                         <div class="slide_1">
                             <img src="images/slide-1-image-1.png" alt="slide1">
@@ -158,10 +161,13 @@
                                 1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
                         </div>
                     </div>
-                </li>
+                </li> --%>
                 <li>
                     <div class="main_img2">
-
+                        <div class="slide_2">
+                            <img src="images/slide-2-image-1.png" alt="slide2">
+                            <span>Financial services template</span>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -307,36 +313,70 @@
                 <h2>TESTIMONIALS</h2>
                 <span>what people say</span>
             </div>
-            <div class="services_cont">
-                <ul>
+            <div class="testimonials_cont">
+                <ul class="slide_banner">
                     <li>
-                        <i class="flaticon-interface"></i>
-                        <div class="services_box">
-                            <a href="#">Business Services<br/>Consulting</a>
-                            <span>Lorem ipsum dolor sit amet, consectet ur adipiscing
-                                elit. Donec nisl urna, porta eu vulputate eu,
-                                scelerisque vel.</span>
+                        <img src="images/slide-image-1.jpg" alt="">
+                        <div class="tab_cont">
+                            <span>Lorem ipsum dolor sit amet, consectet ur
+                            adipiscing elit. Donec nisl urna, porta eu vulputate eu,
+							scelerisque vel turpis. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Donec nisl urna,
+							porta eu vulputate eu duis.</span>
+                            <div class="name">
+                                <h3>Paul Smith</h3>
+                                <h4>CEO &amp; Partner</h4>
+                                <span>Hartmann Corporation</span>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <i class="flaticon-shape"></i>
-                        <div class="services_box">
-                            <a href="#">Financial Services<br/>Management</a>
-                            <span>Elit dronec nisl urna, porta eu vulputate eu,
-                                scelerisque vel turpis. Nullam nisl urnaet quam
-                                justo dolor.</span>
+                        <img src="images/slide-image-2.jpg" alt="">
+                        <div class="tab_cont">
+                            <span>Pellentesque pulvinar purus arcu, at posuere
+                                ante suscipit ut. Proin mattis egestas faucibus.
+                                In vehicula finibus varius. Proin imperdiet
+                                lectus nec viverra finibus. Vestibulum tristique
+								consectetur justo, quis interdum turpis.</span>
+                            <div class="name">
+                                <h3>Jack William</h3>
+                                <h4>Managing Partner</h4>
+                                <span>Computer INC Company</span>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <i class="flaticon-technology-2"></i>
-                        <div class="services_box">
-                            <a href="#">Customer Service<br/>Team</a>
-                            <span>Sit amet, consectetur adipiscing elit.
-                                Donec nisl urna, porta eu vulputate eu, scelerisque
-                                vel turpis ipsum.</span>
+                        <img src="images/slide-image-3.jpg" alt="">
+                        <div class="tab_cont">
+                            <span>Vivamus felis libero, facilisis et quam
+                                eu, dapibus faucibus urna. Fusce a condimentum magna.
+								Praesent sit amet vestibulum diam. Nullam tincidunt
+                                leo ut dui vestibulum imperdiet. Sed gravida, ipsum id.</span>
+                            <div class="name">
+                                <h3>Delia Dean</h3>
+                                <h4>Human Resources</h4>
+                                <span>Milothemes</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/slide-image-4.jpg" alt="">
+                        <div class="tab_cont">
+                            <span>Fusce pharetra mollis luctus. In ut tellus sagittis,
+                                sollicitudin sapien sit amet, faucibus nulla.
+                                Etiam faucibus ac libero sed euismod. Sed ut aliquam
+                                enim, at cursus ex. Aenean est sem, mattis sollicitudin
+                                vehicula vitae.</span>
+                            <div class="name">
+                                <h3>Craig Cassady</h3>
+                                <h4>Html Developer</h4>
+                                <span>Milothemes</span>
+                            </div>
                         </div>
                     </li>
                 </ul>
+                <a class="prevBtn" href="javascript:void(0)"></a>
+                <a class="nextBtn" href="javascript:void(0)"></a>
             </div>
         </div>
     </section>
