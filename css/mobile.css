@@ -188,8 +188,108 @@
         }
     }
 
+    /*메인 이미지 2*/
+    .main_img2{
+        height: 480px;
+    }
+    .slide_2{
+        margin-top: -120px;
+        margin-left: -196px;
+        max-width: 397px;
+        transition: 0.3s;
+    }
+    .slide_2 span{
+        max-width: 397px;
+        margin-top: -22px;
+        font-size: 16px;
+    }
+    /*메인 이미지 2 버튼*/
+    .slide_2 .bt{
+        top: 50px;
+    }
+    @media screen and (max-width: 875px){
+        .main_img2{
+            height: 280px;
+        }
+        .slide_2{
+            margin-top: -100px;
+            margin-left: -140px;
+            max-width: 280px;
+        }
+        .slide_2 span{
+            max-width: 280px;
+            margin-top: -20px;
+            font-size: 11px;
+        }
+        .slide_2 .bt{
+            top: 30px;
+        }
+    }
 
 
+    /*메인 이미지 3*/
+    .main_slide ul li:last-child .main_img_bg{
+        margin-left: 127px;
+    }
+    .main_img3{
+        height: 480px;
+    }
+    .slide_3{
+        margin-top: -160px;
+    }
+    .slide_3 img{
+        max-width: 900px;
+    }
+    .slide_3_title{
+        margin-top: -100px;
+    }
+    .slide_3_title cite{
+        font-size: 58px;
+    }
+    .slide_3_sub{
+        font-size: 20px;
+    }
+    .slide_3_sub2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .slide_3_sub3{
+        top: 90px;
+        left: 60px;
+        font-size: 80px;
+    }
+    @media screen and (max-width: 875px){
+        .main_slide ul li:last-child .main_img_bg{
+            margin-left: 74px;
+        }
+        .main_img3{
+            height: 280px;
+        }
+        .slide_3{
+            margin-top: -90px;
+        }
+        .slide_3 img{
+            max-width: 500px;
+        }
+        .slide_3_title{
+            margin-top: -60px;
+        }
+        .slide_3_title cite{
+            font-size: 38px;
+        }
+        .slide_3_sub{
+            font-size: 16px;
+        }
+        .slide_3_sub2{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .slide_3_sub3{
+            top: 60px;
+            left: 40px;
+            font-size: 45px;
+        }
+    }
 
 
 

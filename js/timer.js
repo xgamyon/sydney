@@ -38,6 +38,7 @@ $(function(){
                 new numberCounter("timer2", 18, 100);
                 new numberCounter("timer3", 1139, 5);
                 new numberCounter("timer4", 59, 30);
+                //(타이머 아이디값, 어느 수치까지, 몇초)
                 show = false;
             }
         }

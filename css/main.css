@@ -292,7 +292,7 @@ nav .menu .menu_home{
     position: absolute;
     top: 85%;
     left: 50%;
-    margin-left: -40px;
+    margin-left: -33px;
     width: 80px;
     z-index: 5;
 }
@@ -366,7 +366,8 @@ section{
 [class^="main_img"]{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center center;
+    transition: 0.5s;
 }
 .main_img1{
     background-image: url('../images/bg-slide-1.jpg');
@@ -462,6 +463,7 @@ section{
     margin-top: -160px;
     margin-left: -296px;
     max-width: 597px;
+    transition: 0.5s;
 }
 .slide_2 img{
     width: 100%;
@@ -479,12 +481,128 @@ section{
 }
 
 
+/*메인 이미지 2 버튼*/
+.slide_2 .bt{
+    position: relative;
+    top: 80px;
+    left: 50%;
+    margin-left: -62px;
+    width: 127px;
+    text-align: center;
+    border: 2px #fff solid;
+    transition: 0.3s;
+}
+.slide_2 .bt a{
+    display: inline-block;
+    padding: 8px 25px;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s;
+}
+.slide_2 .bt:before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -8px;
+    display: block;
+    padding: 18px 0;
+    width: 6px;
+    border-top: 2px #fff solid;
+    border-right: 2px #fff solid;
+    transition: 0.3s;
+}
+.slide_2 .bt:after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: -8px;
+    display: block;
+    width: 127px;
+    height: 6px;
+    border-bottom: 2px #fff solid;
+    border-left: 2px #fff solid;
+    transition: 0.3s;
+}
+
+/*버튼 hover*/
+.bt:hover{
+    border-color: #c8bba1;
+    transition: 0.3s;
+}
+.bt a:hover{
+    color: #c8bba1;
+    transition: 0.3s;
+}
+.bt:hover:before,
+.bt:hover:after{
+    border-color: #c8bba1;
+    transition: 0.3s;
+}
+.bt:hover:before{
+    top: -2px;
+    right: -2px;
+    width: 0px;
+}
+.bt:hover:after{
+    left: -2px;
+    bottom: -2px;
+    height: 0px;
+}
 
 
-
-
-
-
+/*메인 이미지 3*/
+.main_slide ul li:last-child .main_img_bg{
+    left: -50%;
+    margin-left: 180px;
+}
+.main_img3{
+    position: absolute;
+    width: 100%;
+    height: 680px;
+}
+.slide_3{
+    top: 50%;
+    left: 50%;
+    margin-top: -260px;
+    width: 1420px;
+    transition: 0.5s;
+}
+.slide_3 img{
+    width: 100%;
+}
+.slide_3_title{
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    left: 10%;
+    max-width: 650px;
+}
+.slide_3_title cite{
+    font-size: 68px;
+    font-weight: 700;
+    color: #fff;
+    font-style: normal;
+}
+.slide_3_sub{
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    color: #c8bba1;
+}
+.slide_3_sub2{
+    display: block;
+    font-size: 26px;
+    line-height: 40px;
+    color: #fff;
+}
+.slide_3_sub3{
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    font-size: 100px;
+    font-weight: 700;
+    color: #c8bba1;
+}
 
 
 /*메인 배너*/

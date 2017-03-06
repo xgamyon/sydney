@@ -145,9 +145,9 @@
     </header>
     <section>
         <div class="main_slide">
-            <div class="main_img_bg"></div>
             <ul>
-                <%-- <li>
+                <li>
+                    <div class="main_img_bg"></div>
                     <div class="main_img1">
                         <div class="slide_1">
                             <img src="images/slide-1-image-1.png" alt="slide1">
@@ -161,18 +161,31 @@
                                 1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
                         </div>
                     </div>
-                </li> --%>
+                </li>
                 <li>
+                    <div class="main_img_bg"></div>
                     <div class="main_img2">
                         <div class="slide_2">
                             <img src="images/slide-2-image-1.png" alt="slide2">
                             <span>Financial services template</span>
+                            <div class="bt">
+                                <a href="#">DISCOVER</a>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
+                    <div class="main_img_bg"></div>
                     <div class="main_img3">
-
+                        <div class="slide_3">
+                            <img src="images/slide-3-image-1.png" alt="slide2">
+                        </div>
+                        <div class="slide_3_title">
+                            <span class="slide_3_sub">Best online deal</span>
+                            <cite>Insurance Policy</cite>
+                            <span class="slide_3_sub2"><i>from</i></span>
+                            <span class="slide_3_sub3">$59-</span>
+                        </div>
                     </div>
                 </li>
             </ul>
