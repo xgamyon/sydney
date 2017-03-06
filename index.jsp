@@ -144,7 +144,55 @@
         </div>
     </header>
     <section>
-        <div class="main_slide">
+    <!-- https://jsbin.com/hevimeqapu/2/edit?js,console,output -->
+    <!-- https://jsbin.com/qeviciwati/edit?js,console,output-->
+    	<script>
+    	$(function(){
+
+    		var idx = 0;
+
+
+    		$('.main_slide .main_bt_next').click(function(){
+
+    			$('.main_slide li').eq(idx).animate({
+    				left:'-100%'
+    			})
+
+    			idx++
+
+
+    			$('.main_slide li').eq(idx).css({
+    				display:'block',
+    				left:'100%'
+    			}).animate({
+    				left:'0'
+    			},function(){
+    				//에니메이션 후처리
+    			})
+
+    		})
+
+    	})
+
+    	</script>
+    	<style>
+    	.main_slide{
+    		position:relative;
+    	}
+    	.main_slide li {
+    		position:absolute;
+    		display:none;
+    		left:0;
+    		width:100%;
+    	}
+
+
+    	.main_slide li:first-child{
+    		display:block;
+    	}
+
+    	</style>
+    <div class="main_slide">
             <ul>
                 <li>
                     <div class="main_img_bg"></div>
