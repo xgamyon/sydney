@@ -22,10 +22,6 @@ var menu = {
         var depth2_close = function(){
             $(this).children().find('ul').slideUp(300);
         }
-        $('[class^="menu_"]').on('mouseenter', submenu_open)
-        $('.menu').on('mouseleave', submenu_close)
-        $('[class^="sub_"] li a').on('mouseenter', depth2)
-        $('[class^="sub_"]').on('mouseleave', depth2_close)
 
 
         // 클릭시
@@ -42,11 +38,9 @@ var menu = {
             });
         }
 
-
         // pc, 모바일 이동시 호버, 클릭상태 변경
         var size = 'none';
  	    $(window).resize(function(){
-
  	    	size = $('.mobile_menu').css('display');
 
  	    	if(size == "none"){
@@ -84,38 +78,58 @@ var menu = {
  	    	}
  	    })
 
-
     },
 
     // 메뉴바 상단 스크롤
     scroll:function(){
         // var top = $('.nav_cont').offset().top;
 
-        $(window).scroll(function(){
-        	var sct = $(this).scrollTop();
-        	var nav = $('.nav_cont');
+        $(window).resize(function(){
+            size = $('.mobile_menu').css('display');
+            if(size == "none"){
 
-        	if( sct > nav.height()+42 && !nav.is('.fix')){ // 가상으로 fix라는 클래스를 만든것
-        		nav.addClass('fix');
-        		nav.css({
-                    'top':"-70px"
-                }).stop().animate({
-                    'top':"0px"
-                },300).addClass('nav_fixed'); // 동시에 실행됨
+                $(window).scroll(function(){
+                    var sct = $(this).scrollTop();
+                    var nav = $('.nav_cont');
 
-        	}else if(sct < nav.height()+42 && nav.is('.fix')){
-        		nav.removeClass('fix');
-        		nav.css({
-                    'top':"0px"
-                }).stop().animate({
-                    'top':"-70px"
-                },300,function(){
-                    nav.removeClass('nav_fixed'); //애니메이트 끝나고 실행(콜백함수)
+                    nav.addClass('nav_fixed'); // 맨 처음엔 없기 때문에 추가
+
+                	if( sct > nav.height()+42 && !nav.is('.fix')){ // 가상으로 fix라는 클래스를 만든것
+                		nav.addClass('fix');
+                		nav.css({
+                            'top':"-70px"
+                        }).stop().animate({
+                            'top':"0px"
+                        },300).addClass('nav_fixed'); // 동시에 실행됨
+
+                	}else if(sct < nav.height()+42 && nav.is('.fix')){
+                		nav.removeClass('fix');
+                		nav.css({
+                            'top':"0px"
+                        }).stop().animate({
+                            'top':"-70px"
+                        },300,function(){
+                            nav.removeClass('nav_fixed'); //애니메이트 끝나고 실행(콜백함수)
+                        })
+                	}
                 })
-        	}
+
+            }else if(size == "block"){
+
+                $(window).scroll(function(){
+                    var nav = $('.nav_cont');
+                	nav.removeClass('nav_fixed');
+                })
+
+            }
+        });
+        $(window).trigger('resize');
+        // 처음에 resize가 발생 안하기 때문에 실행 한번 시키기
 
 // 메뉴바 상단 스크롤 맨처음 방법
-//
+// $(window).scroll(function(){
+//     var sct = $(this).scrollTop();
+//     var nav = $('.nav_cont');
 //            if($(this).scrollTop() > top+100){
 //
 //                if( start==true){
@@ -134,8 +148,8 @@ var menu = {
 //                }).removeClass('nav_fixed');
 //                start=true;
 //            }
+//      })
 
-        })
     }
 }
 

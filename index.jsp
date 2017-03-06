@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <%-- 슬라이드 배너 --%>
+    <!-- 슬라이드 배너 -->
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/jquery.bxslider.js"></script>
 </head>
@@ -144,9 +144,9 @@
         </div>
     </header>
     <section>
-    <!-- https://jsbin.com/hevimeqapu/2/edit?js,console,output -->
+    <!-- https://jsbin.com/hibeyobefe/1/edit?html,css,js,console,output -->
     <!-- https://jsbin.com/qeviciwati/edit?js,console,output-->
-    	<script>
+    	<%-- <script>
     	$(function(){
 
     		var idx = 0;
@@ -185,13 +185,10 @@
     		left:0;
     		width:100%;
     	}
-
-
     	.main_slide li:first-child{
     		display:block;
     	}
-
-    	</style>
+    	</style> --%>
     <div class="main_slide">
             <ul>
                 <li>
