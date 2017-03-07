@@ -228,7 +228,7 @@
 
 
     /*메인 이미지 3*/
-    .main_slide ul li:last-child .main_img_bg{
+    .mainbanner3 .main_img_bg{
         margin-left: 127px;
     }
     .main_img3{
@@ -259,7 +259,7 @@
         font-size: 80px;
     }
     @media screen and (max-width: 875px){
-        .main_slide ul li:last-child .main_img_bg{
+        .mainbanner3 .main_img_bg{
             margin-left: 74px;
         }
         .main_img3{

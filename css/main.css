@@ -363,6 +363,16 @@ section{
     overflow: hidden;
     transition: 0.5s;
 }
+.main_slide ul li .mainbanner{
+    position:absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    display: none;
+}
+.main_slide ul li:first-child .mainbanner{
+    display:block;
+}
 [class^="main_img"]{
     background-size: cover;
     background-repeat: no-repeat;
@@ -382,7 +392,7 @@ section{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 680px;
     background-color: rgba(4, 20, 43, 0.75);
     z-index: 1;
 }
@@ -551,7 +561,7 @@ section{
 
 
 /*메인 이미지 3*/
-.main_slide ul li:last-child .main_img_bg{
+.mainbanner3 .main_img_bg{
     left: -50%;
     margin-left: 180px;
 }
@@ -804,6 +814,9 @@ section{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+.science .main_img_bg{
+    height: 100%;
 }
 
 

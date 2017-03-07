@@ -5,34 +5,33 @@ var menu = {
     event:function(){
         // 호버시
         var submenu_open = function(){
-            $(this).parent().find('[class^="sub_"]').slideDown(300)
+            $(this).parent().find('[class^="sub_"]').stop().slideDown(300)
             .parent().siblings().find('[class^="sub_"]').css({
                 'display':'none'
             });
         }
         var submenu_close = function(){
-            $(this).find('[class^="sub_"]').slideUp(300);
+            $(this).find('[class^="sub_"]').stop().slideUp(300);
         }
         var depth2 = function(){
-            $(this).parent().find('.depth2').slideDown(300)
+            $(this).parent().find('.depth2').stop().slideDown(300)
             .parent().siblings().find('.depth2').css({
                 'display':'none'
             });
         }
         var depth2_close = function(){
-            $(this).children().find('ul').slideUp(300);
+            $(this).children().find('ul').stop().slideUp(300);
         }
 
-
         // 클릭시
-        var submenu_open_click = function(){
-            $(this).parent().find('[class^="sub_"]').slideToggle(300)
+        var submenu_click = function(){
+            $(this).parent().find('[class^="sub_"]').stop().slideToggle(300)
             .parent().siblings().find('[class^="sub_"]').css({
                 'display':'none'
             });
         }
         var depth2_click = function(){
-            $(this).parent().find('.depth2').slideToggle(300)
+            $(this).parent().find('.depth2').stop().slideToggle(300)
             .parent().siblings().find('.depth2').css({
                 'display':'none'
             });
@@ -43,8 +42,9 @@ var menu = {
  	    $(window).resize(function(){
  	    	size = $('.mobile_menu').css('display');
 
- 	    	if(size == "none"){
-                console.log('none')
+ 	    	if(size == "none" && !$('.mobile_menu').is('.one')){ // 임의의 클래스가 없는 경우도 충족시켜야 한다.
+                // console.log('none')
+                $('.mobile_menu').addClass('one'); //없으니까 생성
 
  	    		//대상.on("hover")
                 $('[class^="menu_"]').on('mouseenter', submenu_open)
@@ -53,31 +53,31 @@ var menu = {
                 $('[class^="sub_"]').on('mouseleave', depth2_close)
 
  	    		//대상.off("click")
-                $('[class^="menu_"]').off('click', submenu_open_click)
-                $('[class^="sub_"] li a').off('click', depth2_click)
+                $('[class^="menu_"]').off('click')
+                $('[class^="sub_"] li a').off('click')
 
  	    		//display  여부
                 $('nav ul').css('display','block')
                 .children().find('ul').css('display','none')
 
- 	    	}else if(size == "block"){
-                console.log('block')
+ 	    	}else if(size == "block" && $('.mobile_menu').is('.one')){
+                // console.log('block')
+                $('.mobile_menu').removeClass('one');
 
  	    		//대상.on("click")
-                $('[class^="menu_"]').on('click', submenu_open_click)
+                $('[class^="menu_"]').on('click', submenu_click)
                 $('[class^="sub_"] li a').on('click', depth2_click)
 
  	    		//대상.off("hover")
-                $('[class^="menu_"]').off('mouseenter', submenu_open)
-                $('.menu').off('mouseleave', submenu_close)
-                $('[class^="sub_"] li a').off('mouseenter', depth2)
-                $('[class^="sub_"]').off('mouseleave', depth2_close)
+                $('[class^="menu_"]').off('mouseenter')
+                $('.menu').off('mouseleave')
+                $('[class^="sub_"] li a').off('mouseenter')
+                $('[class^="sub_"]').off('mouseleave')
 
  	    		//display  여부
                 $('nav ul').css('display','none')
  	    	}
  	    })
-
     },
 
     // 메뉴바 상단 스크롤
@@ -198,7 +198,7 @@ var main_banner = {
     }
 }
 
-// 슬라이드 배너
+// bx슬라이드 배너
 var slider = {
     event:function(){
         var mySlider = $('.slide_banner').bxSlider({

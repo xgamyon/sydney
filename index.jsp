@@ -12,7 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <!-- 슬라이드 배너 -->
+    <script type="text/javascript" src="js/mainbanner.js"></script>
+    <script type="text/javascript" src="js/parallax_scroll.js"></script>
+    <!-- bx슬라이드 배너 -->
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/jquery.bxslider.js"></script>
 </head>
@@ -144,92 +146,53 @@
         </div>
     </header>
     <section>
-    <!-- https://jsbin.com/hibeyobefe/1/edit?html,css,js,console,output -->
-    <!-- https://jsbin.com/qeviciwati/edit?js,console,output-->
-    	<%-- <script>
-    	$(function(){
-
-    		var idx = 0;
-
-
-    		$('.main_slide .main_bt_next').click(function(){
-
-    			$('.main_slide li').eq(idx).animate({
-    				left:'-100%'
-    			})
-
-    			idx++
-
-
-    			$('.main_slide li').eq(idx).css({
-    				display:'block',
-    				left:'100%'
-    			}).animate({
-    				left:'0'
-    			},function(){
-    				//에니메이션 후처리
-    			})
-
-    		})
-
-    	})
-
-    	</script>
-    	<style>
-    	.main_slide{
-    		position:relative;
-    	}
-    	.main_slide li {
-    		position:absolute;
-    		display:none;
-    		left:0;
-    		width:100%;
-    	}
-    	.main_slide li:first-child{
-    		display:block;
-    	}
-    	</style> --%>
-    <div class="main_slide">
+        <div class="main_slide">
             <ul>
                 <li>
-                    <div class="main_img_bg"></div>
-                    <div class="main_img1">
-                        <div class="slide_1">
-                            <img src="images/slide-1-image-1.png" alt="slide1">
-                        </div>
-                        <div class="slide_1_line"></div>
-                        <div class="slide_1_title">
-                            <cite>Protect your assets</cite>
-                            <span class="slide_1_sub">Register today.</span>
-                            <span class="slide_1_sub2">
-                                <span class="c8bba1">CALL NOW </span>
-                                1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="main_img_bg"></div>
-                    <div class="main_img2">
-                        <div class="slide_2">
-                            <img src="images/slide-2-image-1.png" alt="slide2">
-                            <span>Financial services template</span>
-                            <div class="bt">
-                                <a href="#">DISCOVER</a>
+                    <div class="mainbanner">
+                        <div class="main_img_bg"></div>
+                        <div class="main_img1">
+                            <div class="slide_1">
+                                <img src="images/slide-1-image-1.png" alt="slide1">
+                            </div>
+                            <div class="slide_1_line"></div>
+                            <div class="slide_1_title">
+                                <cite>Protect your assets</cite>
+                                <span class="slide_1_sub">Register today.</span>
+                                <span class="slide_1_sub2">
+                                    <span class="c8bba1">CALL NOW </span>
+                                    1-800-<span class="c8bba1">SYDNEY</span>-4506</span>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="main_img_bg"></div>
-                    <div class="main_img3">
-                        <div class="slide_3">
-                            <img src="images/slide-3-image-1.png" alt="slide2">
+                    <div class="mainbanner">
+                        <div class="main_img_bg"></div>
+                        <div class="main_img2">
+                            <div class="slide_2">
+                                <img src="images/slide-2-image-1.png" alt="slide2">
+                                <span>Financial services template</span>
+                                <div class="bt">
+                                    <a href="#">DISCOVER</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slide_3_title">
-                            <span class="slide_3_sub">Best online deal</span>
-                            <cite>Insurance Policy</cite>
-                            <span class="slide_3_sub2"><i>from</i></span>
-                            <span class="slide_3_sub3">$59-</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="mainbanner">
+                        <div class="main_img_bg"></div>
+                        <div class="main_img3">
+                            <div class="slide_3">
+                                <img src="images/slide-3-image-1.png" alt="slide2">
+                            </div>
+                            <div class="slide_3_title">
+                                <span class="slide_3_sub">Best online deal</span>
+                                <cite>Insurance Policy</cite>
+                                <span class="slide_3_sub2"><i>from</i></span>
+                                <span class="slide_3_sub3">$59-</span>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -239,8 +202,8 @@
                 <a href="javascript:void(0)">2</a>
                 <a href="javascript:void(0)">3</a>
             </div>
-            <div class="main_bt_prev" type="button"><a href="#"><img src="images/arrow_left.png" alt=""></a></div>
-            <div class="main_bt_next" type="button"><a href="#"><img src="images/arrow_right.png" alt=""></a></div>
+            <div class="main_bt_prev" type="button"><a href="javascript:void(0)"><img src="images/arrow_left.png" alt=""></a></div>
+            <div class="main_bt_next" type="button"><a href="javascript:void(0)"><img src="images/arrow_right.png" alt=""></a></div>
         </div>
         <div class="main_banner">
             <ul>
