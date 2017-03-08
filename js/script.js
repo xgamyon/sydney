@@ -39,11 +39,18 @@ var menu = {
 
         // pc, 모바일 이동시 호버, 클릭상태 변경
         var size = 'none';
+        size = $('.mobile_menu').css('display');
+
+        if( size=="block"){   // 시초에 모바일이 먼저 불러왔을 경우 class 가 없기 때문에 추가
+            $('.mobile_menu').addClass('one');
+        }
+
  	    $(window).resize(function(){
+
  	    	size = $('.mobile_menu').css('display');
 
  	    	if(size == "none" && !$('.mobile_menu').is('.one')){ // 임의의 클래스가 없는 경우도 충족시켜야 한다.
-                // console.log('none')
+                console.log('none')
                 $('.mobile_menu').addClass('one'); //없으니까 생성
 
  	    		//대상.on("hover")
@@ -61,7 +68,7 @@ var menu = {
                 .children().find('ul').css('display','none')
 
  	    	}else if(size == "block" && $('.mobile_menu').is('.one')){
-                // console.log('block')
+                console.log('block')
                 $('.mobile_menu').removeClass('one');
 
  	    		//대상.on("click")
@@ -78,6 +85,8 @@ var menu = {
                 $('nav ul').css('display','none')
  	    	}
  	    })
+        $(window).trigger('resize');
+        // 처음에 resize가 발생 안하기 때문에 실행 한번 시키기
     },
 
     // 메뉴바 상단 스크롤
@@ -86,7 +95,8 @@ var menu = {
 
         $(window).resize(function(){
             size = $('.mobile_menu').css('display');
-            if(size == "none"){
+            if(size == "none" && !$('.mobile_menu').is('.mob')){
+                $('.mobile_menu').addClass('mob');
 
                 $(window).scroll(function(){
                     var sct = $(this).scrollTop();
@@ -114,17 +124,17 @@ var menu = {
                 	}
                 })
 
-            }else if(size == "block"){
-
+            }else if(size == "block" && $('.mobile_menu').is('.mob')){
+                $('.mobile_menu').removeClass('mob');
                 $(window).scroll(function(){
                     var nav = $('.nav_cont');
                 	nav.removeClass('nav_fixed');
                 })
-
             }
         });
         $(window).trigger('resize');
         // 처음에 resize가 발생 안하기 때문에 실행 한번 시키기
+
 
 // 메뉴바 상단 스크롤 맨처음 방법
 // $(window).scroll(function(){

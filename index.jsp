@@ -13,7 +13,6 @@
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/mainbanner.js"></script>
-    <script type="text/javascript" src="js/parallax_scroll.js"></script>
     <!-- bx슬라이드 배너 -->
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/jquery.bxslider.js"></script>
@@ -398,6 +397,64 @@
                 </ul>
                 <a class="prevBtn" href="javascript:void(0)"></a>
                 <a class="nextBtn" href="javascript:void(0)"></a>
+            </div>
+        </div>
+        <div class="consulting">
+            <div class="main_img_bg2"></div>
+            <div class="main_img_bg"></div>
+            <div class="consulting_title1">
+                <h2>We provide the best Consulting Services</h2>
+                <span>One more step to grow your business</span>
+            </div>
+            <div class="consulting_title2">
+                <ul>
+                    <li>
+                        <i class="flaticon-wrench"></i>
+                        <i class="flaticon-camera"></i>
+                        <i class="flaticon-food"></i>
+                    </li>
+                    <li>
+                        <span>Sed vitae elementum leo, vel faucibus sapien.
+                            Cras malesuada sagittis ante, nec feugiat ante.
+                            Nunc sed maximus massa. Nullam convallis lorem
+                            ut tristique imperdiet. Ut tristique volutpat
+                            nunc sit amet duis.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="news">
+            <div class="cont_title">
+                <h2>NEWS</h2>
+                <span>what's going on</span>
+            </div>
+            <div class="news_cont">
+                <ul>
+                    <li>
+                        <div class="services_box">
+                            <a href="#">Business Services<br/>Consulting</a>
+                            <span>Lorem ipsum dolor sit amet, consectet ur adipiscing
+                                elit. Donec nisl urna, porta eu vulputate eu,
+                                scelerisque vel.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services_box">
+                            <a href="#">Financial Services<br/>Management</a>
+                            <span>Elit dronec nisl urna, porta eu vulputate eu,
+                                scelerisque vel turpis. Nullam nisl urnaet quam
+                                justo dolor.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services_box">
+                            <a href="#">Customer Service<br/>Team</a>
+                            <span>Sit amet, consectetur adipiscing elit.
+                                Donec nisl urna, porta eu vulputate eu, scelerisque
+                                vel turpis ipsum.</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
