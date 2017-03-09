@@ -438,13 +438,13 @@ section{
     text-shadow: -2px -2px 24px rgba(0, 0, 0, 0.54);
     font-style: normal;
 }
-.slide_1_title .slide_1_sub{
+.slide_1_sub{
     display: block;
     text-align: center;
     font-size: 35px;
     margin-top: -25%
 }
-.slide_1_title .slide_1_sub2{
+.slide_1_sub2{
     position: absolute;
     bottom: -37px;
     right: 80px;
@@ -454,7 +454,7 @@ section{
     font-weight: 700;
     background-color: #04142b;
 }
-.slide_1_title .slide_1_sub2 .c8bba1{
+.slide_1_sub2 .c8bba1{
     color: #c8bba1;
     font-size: 18px;
     font-weight: 700;
@@ -1087,11 +1087,197 @@ section{
 .news_cont ul li{
     position: relative;
     top: 0;
-    width: 33.33333333%;
-    min-height: 170px;
+    width: 31%;
     float: left;
+    margin-right: 3%;
     margin-bottom: 20px;
 }
+.news_cont ul li:last-child{
+    margin-right: 0;
+}
+.news_box{
+    max-width: 360px;
+}
+.news_box .news_img{
+    position: relative;
+    top: 0;
+}
+.news_box .news_img .news_tab{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 15px;
+    background-color: #c8bba1;
+    transition: 0.3s;
+}
+.news_box .news_img img{
+    width: 100%;
+}
+.news_box .flaticon-clock span{
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    margin: 15px 0;
+    margin-left: 10px;
+}
+.news_box cite{
+    display: block;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #04142b;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.news_box span{
+    display: block;
+    color: #737373;
+    line-height: 26px;
+}
+.news_box .more{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #04142b;
+    margin-top: 40px;
+    padding: 5px 5px 0 0;
+    transition: 0.3s;
+}
+.news_box .more:after{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../images/arrow_news.png');
+}
+
+
+/*뉴스 컨텐츠 hover*/
+.news_box cite:hover{
+    color: #c8bba1;
+    transition: 0.3s;
+}
+.news_box .more:hover{
+    color: #c8bba1;
+    transition: 0.3s;
+}
+
+
+/*메일*/
+.mail{
+    margin-top: 100px;
+    background-color: #e4f0f3;
+}
+.mail_cont{
+    position: relative;
+    top: 0;
+    max-width: 1170px;
+    height: 618px;
+    margin: 0 auto;
+}
+
+/*메일 이미지*/
+.mail_img{
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    max-width: 455px;
+}
+.mail_img img{
+    width: 100%;
+}
+.mail_img .from{
+    position: absolute;
+    top: 170px;
+    left: -15px;
+    width: 155px;
+    height: 155px;
+    background-color: #04142b;
+    border-radius: 50%;
+    text-align: center;
+}
+.mail_img .from .price1{
+    position: relative;
+    top: 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+.mail_img .from .price2{
+    position: relative;
+    top: 5px;
+    color: #c8bba1;
+    font-size: 40px;
+}
+.mail_img .from .price2 .num1{
+    position: relative;
+    top: 12px;
+    font-size: 60px;
+}
+.mail_img .from .price2 .num2{
+    position: relative;
+    top: -20px;
+    font-size: 18px;
+}
+.mail_img .from .price3{
+    position: relative;
+    top: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*메일 폼*/
+.mail_form{
+    position: absolute;
+    left: 35%;
+    width: 700px;
+    height: 100%;
+    text-align: center;
+    border: 1px #f00 solid;
+}
+.mail_form h3{
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 95px;
+    color: #04142b;
+    margin-top: 50px;
+    margin-bottom: 14px;
+}
+.mail_form .slide_1_sub2{
+    position: absolute;
+    bottom: 420px;
+    right: 50%;
+    margin-right: -135px;
+    color: #fff;
+}
+.form_wrap{
+    position: absolute;
+    top: 250px;
+    left: -40px;
+    width: 600px;
+    height: 200px;
+    border: 1px #f00 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

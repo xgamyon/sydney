@@ -201,8 +201,12 @@
                 <a href="javascript:void(0)">2</a>
                 <a href="javascript:void(0)">3</a>
             </div>
-            <div class="main_bt_prev" type="button"><a href="javascript:void(0)"><img src="images/arrow_left.png" alt=""></a></div>
-            <div class="main_bt_next" type="button"><a href="javascript:void(0)"><img src="images/arrow_right.png" alt=""></a></div>
+            <div class="main_bt_prev">
+                <a href="javascript:void(0)"><img src="images/arrow_left.png" alt=""></a>
+            </div>
+            <div class="main_bt_next">
+                <a href="javascript:void(0)"><img src="images/arrow_right.png" alt=""></a>
+            </div>
         </div>
         <div class="main_banner">
             <ul>
@@ -431,27 +435,90 @@
             <div class="news_cont">
                 <ul>
                     <li>
+                        <div class="news_box">
+                            <div class="news_img">
+                                <a class="news_tab" href="#">News</a>
+                                <img src="images/news1.jpg" alt="news1">
+                            </div>
+                            <i class="flaticon-clock"><span>April 10, 2016</span></i>
+                            <cite>How to build a succesfull business in the current market</cite>
+                            <span>Lorem ipsum dolor sit amet, consectet ur adipisc ing elit.
+                                Donec nisl urna, porta eu vulputate eu, scelerisque vel turpis.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <a class="more" href="#">READ MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_box">
+                            <div class="news_img">
+                                <a class="news_tab" href="#">Events</a>
+                                <img src="images/news2.jpg" alt="news2">
+                            </div>
+                            <i class="flaticon-clock"><span>April 09, 2016</span></i>
+                            <cite>Get a credit online with our team's help</cite>
+                            <span>Fusce pharetra mollis luctus. In ut tellus sagittis,
+                                sollicitudin sapien sit amet, faucibus nulla. Etiam
+                                faucibus ac libero sed euismod. Sed ut aliquam enim,
+                                at cursus mattis sollicitudin.</span>
+                            <a class="more" href="#">READ MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_box">
+                            <div class="news_img">
+                                <a class="news_tab" href="#">Research</a>
+                                <img src="images/news3.jpg" alt="news3">
+                            </div>
+                            <i class="flaticon-clock"><span>April 08, 2016</span></i>
+                            <cite>Create a business strategy in only 5 steps</cite>
+                            <span>Nunc dapibus augue vel tempor aliquet. Aliquam
+                                cursus cursus orci. Mauris viverra suscipit sem sed
+                                lacinia. In fringilla dapibus enim, ac molestie
+                                libero viverra at. Phasellus volutpat.</span>
+                            <a class="more" href="#">READ MORE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mail">
+            <div class="mail_cont">
+                <div class="mail_img">
+                    <img src="images/mail_img.png" alt="">
+                    <div class="from">
+                        <span class="price1">FROM</span>
+                        <span class="price2">$<span class="num1">79</span><span class="num2">00</span></span>
+                        <span class="price3">/YEAR</span>
+                    </div>
+                </div>
+                <div class="mail_form">
+                    <h3>Hire a Broker</h3>
+                    <span class="slide_1_sub2">
+                        <span class="c8bba1">CALL NOW </span>
+                        1-800-<span class="c8bba1">SYDNEY</span>-4506
+                    </span>
+                    <div class="form_wrap">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="services">
+            <div class="cont_title">
+                <h2>SERVICES</h2>
+                <span>you know what we offer</span>
+            </div>
+            <div class="services_cont">
+                <ul>
+                    <li>
+                        <i class="flaticon-interface"></i>
                         <div class="services_box">
                             <a href="#">Business Services<br/>Consulting</a>
                             <span>Lorem ipsum dolor sit amet, consectet ur adipiscing
                                 elit. Donec nisl urna, porta eu vulputate eu,
                                 scelerisque vel.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="services_box">
-                            <a href="#">Financial Services<br/>Management</a>
-                            <span>Elit dronec nisl urna, porta eu vulputate eu,
-                                scelerisque vel turpis. Nullam nisl urnaet quam
-                                justo dolor.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="services_box">
-                            <a href="#">Customer Service<br/>Team</a>
-                            <span>Sit amet, consectetur adipiscing elit.
-                                Donec nisl urna, porta eu vulputate eu, scelerisque
-                                vel turpis ipsum.</span>
                         </div>
                     </li>
                 </ul>

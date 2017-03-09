@@ -48,7 +48,7 @@ var menu = {
  	    $(window).resize(function(){
 
  	    	size = $('.mobile_menu').css('display');
-
+            // 리사이징 이벤트가 계속 발생하기 때문에 조건을 2가지로 줘서 한번만 실행하게
  	    	if(size == "none" && !$('.mobile_menu').is('.one')){ // 임의의 클래스가 없는 경우도 충족시켜야 한다.
                 console.log('none')
                 $('.mobile_menu').addClass('one'); //없으니까 생성
@@ -236,6 +236,21 @@ var slider = {
         });
     }
 }
+
+
+// news hover
+$(function(){
+    $('.news_box').hover(function(){
+        $(this).children().find('.news_tab').css('background-color', '#04142b')
+    },function(){
+        $(this).children().find('.news_tab').css('background-color', '#c8bba1')
+    })
+})
+
+
+
+
+
 
 $(function(){
     menu.event();
