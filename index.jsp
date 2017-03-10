@@ -498,32 +498,67 @@
                         1-800-<span class="c8bba1">SYDNEY</span>-4506
                     </span>
                     <div class="form_wrap">
-
+                        <ul>
+                            <li class="input_name">
+                                <input type="text" name="name" placeholder="Full name*">
+                            </li>
+                            <li class="input_email">
+                                <input type="text" name="email" placeholder="E-mail*">
+                            </li>
+                            <li class="input_phone">
+                                <input type="text" name="phone" placeholder="Phone*">
+                            </li>
+                            <li class="input_address">
+                                <input type="text" name="address" placeholder="Address">
+                            </li>
+                        </ul>
+                        <div class="bt">
+                            <a href="#">SUBMIT</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="services">
+        <div class="parteners">
             <div class="cont_title">
-                <h2>SERVICES</h2>
-                <span>you know what we offer</span>
+                <h2>OUR PARTENERS</h2>
+                <span>the best services</span>
             </div>
-            <div class="services_cont">
-                <ul>
+            <div class="parteners_cont">
+                <ul class="slide_banner_parteners">
                     <li>
-                        <i class="flaticon-interface"></i>
-                        <div class="services_box">
-                            <a href="#">Business Services<br/>Consulting</a>
-                            <span>Lorem ipsum dolor sit amet, consectet ur adipiscing
-                                elit. Donec nisl urna, porta eu vulputate eu,
-                                scelerisque vel.</span>
-                        </div>
+                        <img src="images/logo-1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-4.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-5.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-6.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-7.png" alt="">
                     </li>
                 </ul>
+                <a class="prevBtn_parteners" href="javascript:void(0)"></a>
+                <span class="line"></span>
+                <a class="nextBtn_parteners" href="javascript:void(0)"></a>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer">
+            
+        </div>
+
+    </footer>
 </body>
 </html>

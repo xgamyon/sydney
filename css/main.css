@@ -98,12 +98,25 @@ header{
     border: 0;
     background-color: #c8bba1;
     color: #fff;
-    max-width: 180px;
+    width: 80%;
     height: 37px;
     font-size: 15px;
+    outline: none;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #fff;
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
 }
 .search input[type="submit"]{
     position: absolute;
@@ -492,7 +505,7 @@ section{
 
 
 /*메인 이미지 2 버튼*/
-.slide_2 .bt{
+.bt{
     position: relative;
     top: 80px;
     left: 50%;
@@ -502,14 +515,14 @@ section{
     border: 2px #fff solid;
     transition: 0.3s;
 }
-.slide_2 .bt a{
+.bt a{
     display: inline-block;
     padding: 8px 25px;
     font-weight: 700;
     color: #fff;
     transition: 0.3s;
 }
-.slide_2 .bt:before{
+.bt:before{
     content: "";
     position: absolute;
     top: 4px;
@@ -521,7 +534,7 @@ section{
     border-right: 2px #fff solid;
     transition: 0.3s;
 }
-.slide_2 .bt:after{
+.bt:after{
     content: "";
     position: absolute;
     left: 4px;
@@ -716,15 +729,6 @@ section{
 }
 
 
-/*서비스*/
-.services{
-    width: 95%;
-    max-width: 1170px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-
 /*컨텐츠 타이틀*/
 .cont_title{
     margin-bottom: 80px;
@@ -750,6 +754,15 @@ section{
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
+    color: #04142b;
+}
+
+/*서비스*/
+.services{
+    width: 95%;
+    max-width: 1170px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 
@@ -1240,7 +1253,6 @@ section{
     width: 700px;
     height: 100%;
     text-align: center;
-    border: 1px #f00 solid;
 }
 .mail_form h3{
     font-size: 72px;
@@ -1262,27 +1274,166 @@ section{
     top: 250px;
     left: -40px;
     width: 600px;
-    height: 200px;
-    border: 1px #f00 solid;
+}
+.form_wrap ul li{
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 4%;
+}
+.form_wrap .input_name{
+    width: 48%;
+}
+.form_wrap .input_email{
+    width: 48%;
+    margin-right: 0%;
+}
+.form_wrap .input_phone{
+    width: 38%;
+}
+.form_wrap .input_address{
+    width: 58%;
+    margin-right: 0%;
+}
+
+.form_wrap input{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    height: 25px;
+    border-bottom: 2px #04142b solid;
+    background-color: transparent;
+    padding: 10px 0;
+    outline: none;
+    transition: 0.3s;
+}
+.form_wrap input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: #04142b;
+    font-style: italic;
+}
+.form_wrap input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: #04142b;
+    font-style: italic;
+}
+.form_wrap input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+    color: #04142b;
+    font-style: italic;
 }
 
 
+/*폼 버튼 (기본스타일은 메인 이미지 2 버튼)*/
+.form_wrap .bt{
+    position: absolute;
+    top: 160px;
+    border: 2px #04142b solid;
+}
+.form_wrap .bt a{
+    color: #04142b;
+}
+.form_wrap .bt:before{
+    border-top: 2px #04142b solid;
+    border-right: 2px #04142b solid;
+}
+.form_wrap .bt:after{
+    border-bottom: 2px #04142b solid;
+    border-left: 2px #04142b solid;
+}
+
+/*버튼 hover*/
+.form_wrap .bt:hover{
+    border-color: #c8bba1;
+}
+.form_wrap .bt a:hover{
+    color: #c8bba1;
+}
+.form_wrap .bt:hover:before,
+.form_wrap .bt:hover:after{
+    border-color: #c8bba1;
+}
+.form_wrap .bt:hover:before{
+    top: -2px;
+    right: -2px;
+    width: 0px;
+}
+.form_wrap .bt:hover:after{
+    left: -2px;
+    bottom: -2px;
+    height: 0px;
+}
 
 
+/*parteners*/
+.parteners{
+    width: 95%;
+    max-width: 1170px;
+    margin: 100px auto 0;
+}
 
 
+/*parteners 컨텐츠*/
+.parteners_cont{
+    position: relative;
+    top: -20px;
+}
+.slide_banner_parteners li img{
+    max-width: 130px;
+    margin: 0 auto;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.slide_banner_parteners li img:hover{
+    opacity: 1;
+}
+
+/*parteners 버튼 애니메이션*/
+.parteners_cont [class$="Btn_parteners"]{
+    position: absolute;
+    top: -100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 45px;
+    height: 45px;
+    transition: 0.5s;
+    z-index: 5;
+}
+.prevBtn_parteners{
+    right: 50px;
+    background-image: url('../images/arrow_left_c.png');
+}
+.nextBtn_parteners{
+    right: 0;
+    background-image: url('../images/arrow_right_c.png');
+}
+.parteners_cont .prevBtn_parteners:hover{
+    background-image: url('../images/arrow_left_on.png');
+}
+.parteners_cont .nextBtn_parteners:hover{
+    background-image: url('../images/arrow_right_on.png');
+}
+.line{
+    position: absolute;
+    top: -83px;
+    right: 46px;
+    display: block;
+    height: 12px;
+    border-right: 2px #ccc solid;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+/*footer*/
+footer{
+    position: relative;
+    top: 60px;
+}
+.footer{
+    width: 100%;
+    height: 508px;
+    background-color: #020d1d;
+    transition: 0.5s;
+}
 
 
 
