@@ -240,6 +240,7 @@ nav .menu .menu_home{
     height: 4px;
     margin-right: 15px;
     border: 1px #2b3542 solid;
+    transition: 0.5s;
 }
 .arrow_sub{
     position: absolute;
@@ -255,6 +256,9 @@ nav .menu .menu_home{
 }
 [class^="sub_"] li a:hover{
     color: #c8bba1;
+}
+[class^="sub_"] li a:hover::before{
+    border: 1px #c8bba1 solid;
 }
 .depth2{
     position: absolute;
@@ -1427,14 +1431,286 @@ section{
 footer{
     position: relative;
     top: 60px;
-}
-.footer{
     width: 100%;
     height: 508px;
     background-color: #020d1d;
     transition: 0.5s;
 }
+.footer{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1170px;
+    overflow: hidden;
+}
+.footer > ul > li{
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+.footer > ul > li:last-child{
+    margin-right: 0;
+}
 
+
+/*footer 타이틀*/
+.footer_title h3{
+    font-size: 30px;
+    line-height: 42px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.footer_title h4{
+    font-size: 20px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.footer_title h4 .c8bba1{
+    font-size: 20px;
+    color: #c8bba1;
+    font-style: initial;
+    font-weight: initial;
+}
+.footer_title span{
+    font-size: 18px;
+    font-weight: 300;
+    color: #c8bba1;
+    font-style: italic;
+}
+
+
+/*footer 공통*/
+h5{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+
+/*footer 뉴스*/
+.footer_news ul li{
+    position: relative;
+    top: 0;
+    margin-bottom: 25px;
+}
+.footer_news ul li:last-child{
+    margin-bottom: 0;
+}
+.footer_news_cont{
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+.footer_news_cont a{
+    font-size: 12px;
+    color: #6f7b8a;
+    transition: 0.3s;
+}
+.footer_news_cont a:hover{
+    color: #c8bba1;
+}
+.footer_news_cont a .flaticon-clock:before{
+    font-size: 12px;
+    color: #6f7b8a;
+}
+.footer_news_cont span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer_news_cont span:hover{
+    color: #c8bba1;
+}
+
+
+/*footer 링크*/
+
+.footer_link ul{
+    width: 50%;
+    float: left;
+}
+.footer_link ul li{
+    margin-bottom: 15px;
+}
+.footer_link ul li a{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #8d98a6;
+    transition: 0.3s;
+}
+.footer_link ul li a:hover{
+    color: #c8bba1;
+}
+.footer_link ul li a:before{
+    content: '';
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #8d98a6;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+.footer_link ul li a:hover:before{
+    border: 1px solid #c8bba1;
+}
+
+/*footer SUBSCRIBE*/
+.footer_subscribe span{
+    font-size: 13px;
+    line-height: 24px;
+    color: #6f7b8a;
+    font-style: italic;
+}
+.footer_subscribe form{
+    position: relative;
+    top: 0;
+    max-width: 230px;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c8bba1;
+}
+.footer_subscribe input{
+    line-height: 42px;
+    font-size: 15px;
+    color: #6f7b8a;
+}
+.footer_subscribe input:first-child{
+    max-width: 150px;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+.footer_subscribe input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: #6f7b8a;
+    font-style: italic;
+}
+.footer_subscribe input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: #6f7b8a;
+    font-style: italic;
+}
+.footer_subscribe input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+    color: #6f7b8a;
+    font-style: italic;
+}
+.footer_subscribe input:last-child{
+    position: absolute;
+    right: 15px;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c8bba1;
+}
+.footer_subscribe img{
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+
+
+/*copy*/
+.footer_copy{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.copy{
+    width: 95%;
+    max-width: 1170px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-top: 1px solid #c8bba1;
+}
+.copy > ul > li{
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+.copy_icon a{
+    margin-right: 10px;
+}
+.copy_icon a [class^="flaticon-"]:before{
+    font-size: 16px;
+    margin-left: 0;
+    padding: 10px;
+    transition: 0.3s;
+}
+.copy_icon a:nth-child(1) [class^="flaticon-"]:hover{
+    color: #d73532;
+}
+.copy_icon a:nth-child(2) [class^="flaticon-"]:hover{
+    color: #018faf;
+}
+.copy_icon a:nth-child(3) [class^="flaticon-"]:hover{
+    color: #82685a;
+}
+.copy_icon a:nth-child(4) [class^="flaticon-"]:hover{
+    color: #0e59a0;
+}
+.copy_icon a:nth-child(5) [class^="flaticon-"]:hover{
+    color: #0ea4ff;
+}
+
+.copy .widget{
+    float: right;
+}
+.copy .widget ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.copy .widget ul li a{
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+}
+.copy .widget ul li a:hover{
+    color: #c8bba1;
+}
+
+
+
+.scroll_up{
+    display: none;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #c8bba1;
+    background-color: transparent;
+    background-image: url('../images/arrow_up.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    transition: 0.3s;
+}
+.scroll_up:hover{
+    background-color: #c8bba1;
+    background-image: url('../images/arrow_up_on.png');
+}
 
 
 

@@ -112,6 +112,8 @@ var menu = {
                             'top':"0px"
                         },300).addClass('nav_fixed'); // 동시에 실행됨
 
+                        $('.scroll_up').css('display','block') // 하단 스크롤
+
                 	}else if(sct < nav.height()+42 && nav.is('.fix')){
                 		nav.removeClass('fix');
                 		nav.css({
@@ -121,6 +123,9 @@ var menu = {
                         },300,function(){
                             nav.removeClass('nav_fixed'); //애니메이트 끝나고 실행(콜백함수)
                         })
+
+                        $('.scroll_up').css('display','none') // 하단 스크롤
+
                 	}
                 })
 
@@ -238,26 +243,6 @@ var slider = {
 }
 
 
-
-$(function(){
-
-    // news hover
-    $('.news_box').hover(function(){
-        $(this).children().find('.news_tab').css('background-color', '#04142b')
-    },function(){
-        $(this).children().find('.news_tab').css('background-color', '#c8bba1')
-    })
-
-    // mail_form
-    $('.form_wrap input').focus(function(){
-        $(this).css('border-bottom', '2px #c8bba1 solid')
-    })
-    $('.form_wrap input').blur(function(){
-        $(this).css('border-bottom', '2px #04142b solid')
-    })
-})
-
-
 // bx슬라이드 배너
 var slider_parteners = {
     event:function(){
@@ -296,4 +281,44 @@ $(function(){
     main_banner.event();
     slider.event();
     slider_parteners.event();
+})
+
+
+
+$(function(){
+
+    // news hover
+    $('.news_box').hover(function(){
+        $(this).children().find('.news_tab').css('background-color', '#04142b')
+    },function(){
+        $(this).children().find('.news_tab').css('background-color', '#c8bba1')
+    })
+
+    // mail_form
+    $('.form_wrap input').focus(function(){
+        $(this).css('border-bottom', '2px #c8bba1 solid')
+    })
+    $('.form_wrap input').blur(function(){
+        $(this).css('border-bottom', '2px #04142b solid')
+    })
+
+    // footer SUBSCRIBE
+    $('.footer_subscribe input').focus(function(){
+        $(this).parent().css('border', '1px solid #fff')
+    })
+    $('.footer_subscribe input').blur(function(){
+        $(this).parent().css('border', '1px solid #c8bba1')
+    })
+
+
+    // scroll_up 클릭시 상단으로
+    $('.scroll_up').click(function(){
+        var topidx = $('header').offset().top;
+        $('html,body').stop().animate({
+            'scrollTop' : topidx
+        })
+
+    })
+
+
 })
