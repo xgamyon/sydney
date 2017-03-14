@@ -680,7 +680,7 @@ section{
     display: none;
     top: 0px;
     width: 100%;
-    height: 262px;
+    height: 100%;
     overflow-y: scroll;
     background-color: rgba(4, 20, 43, 0.9);
 }
@@ -703,8 +703,7 @@ section{
     margin-top: 20px;
 }
 .banner_pop ul li:last-child{
-    position: absolute;
-    bottom: 5%;
+    margin-bottom: 30px;
 }
 .banner_pop strong{
     color: #fff;
@@ -749,7 +748,7 @@ section{
     bottom: -18px;
     margin: 0 5px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 300;
     color: #c8bba1;
 }
 .cont_title span{
@@ -868,7 +867,6 @@ section{
     width: 23.4%;
     margin: 0 0.8%;
     height: 200px;
-    transition: outline 1s;
 }
 .science_title ul li:first-child{
     margin-left: 0;
@@ -897,7 +895,7 @@ section{
 }
 .science_title ul li:after{
     width: 100%;
-    height: 199px;
+    height: 198px;
     border-top: 1px #c8bba1 solid;
     border-bottom: 1px #c8bba1 solid;
     transform: scaleX(0);
@@ -909,8 +907,6 @@ section{
 .science_title ul li:hover:after{
     transform: scaleX(1);
 }
-
-
 .science_title ul li span{
     display: block;
     text-align: center;
@@ -930,6 +926,7 @@ section{
 .testimonials{
     width: 95%;
     max-width: 1170px;
+    height: 100%;
     margin: 100px auto 0;
 }
 .testimonials_cont{
@@ -968,9 +965,6 @@ section{
     color: #c8bba1;
     line-height: 25px;
 }
-
-
-
 
 
 /*testimonials 버튼 애니메이션*/
@@ -1051,7 +1045,7 @@ section{
     font-weight: 700;
     color: #fff;
     text-align: center;
-
+    transition: 0.5s;
 }
 .consulting_title1 span{
     display: block;
@@ -1076,7 +1070,7 @@ section{
     font-size: 48px;
     line-height: 72px;
     color: #fff;
-    margin: 0 55px;
+    margin: 0 45px;
 }
 .consulting_title2 ul li span{
     position: absolute;
@@ -1589,7 +1583,7 @@ h5{
     color: #6f7b8a;
 }
 .footer_subscribe input:first-child{
-    max-width: 150px;
+    width: 60%;
     border: 0;
     background-color: transparent;
     outline: none;
@@ -1611,7 +1605,7 @@ h5{
 }
 .footer_subscribe input:last-child{
     position: absolute;
-    right: 15px;
+    right: 10px;
     border: 0;
     background-color: transparent;
     outline: none;
@@ -1625,6 +1619,7 @@ h5{
     position: absolute;
     top: 200px;
     right: 0;
+    transition: 0.5s;
 }
 
 

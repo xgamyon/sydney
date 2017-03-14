@@ -66,6 +66,7 @@ var menu = {
  	    		//display  여부
                 $('nav ul').css('display','block')
                 .children().find('ul').css('display','none')
+                $('.scroll_up').css('display','none') // 하단 스크롤
 
  	    	}else if(size == "block" && $('.mobile_menu').is('.one')){
                 console.log('block')
@@ -83,6 +84,7 @@ var menu = {
 
  	    		//display  여부
                 $('nav ul').css('display','none')
+                $('.scroll_up').css('display','block') // 하단 스크롤
  	    	}
  	    })
         $(window).trigger('resize');
