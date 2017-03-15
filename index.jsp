@@ -558,7 +558,7 @@
         <div class="footer">
             <ul>
                 <li class="footer_title">
-                    <h3>Don’t hesitate, contact us.</h3>
+                    <h3>Don't hesitate, contact us.</h3>
                     <h4>1-800-<span class="c8bba1">SYDNEY</span>-4506</h4>
                     <span>Sed vitae elementum leo, elementum sapien. Cras malesuada.</span>
                 </li>

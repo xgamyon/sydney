@@ -91,8 +91,10 @@
 
 
 .subcont_aboutus_2{
-    width: 100%;
-    height: 400px;
+    position: relative;
+    top: 0;
+    max-width: 1170px;
+    padding: 40px;
     margin-top: 80px;
     background-image: url('../images/bg-3.jpg');
     background-repeat: no-repeat;
@@ -100,6 +102,191 @@
     background-size: cover;
     border: 1px #c8bba1 solid;
 }
+.aboutus_2_title{
+    width: 33.33333333%;
+    height: 100%;
+    margin-left: 66.66666667%;
+}
+.aboutus_2_title h3{
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 700;
+    color: #04142b;
+}
+
+/*메인에 쓴 bt과 상속받음*/
+.aboutus_2_title .bt{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 147px;
+    border: 2px #04142b solid;
+}
+.aboutus_2_title .bt a{
+    color: #04142b;
+}
+.aboutus_2_title .bt:before{
+    border-top: 2px #04142b solid;
+    border-right: 2px #04142b solid;
+}
+.aboutus_2_title .bt:after{
+    width: 147px;
+    border-bottom: 2px #04142b solid;
+    border-left: 2px #04142b solid;
+}
+
+/*버튼 hover*/
+.aboutus_2_title .bt:hover{
+    border-color: #c8bba1;
+}
+.aboutus_2_title .bt a:hover{
+    color: #c8bba1;
+}
+.aboutus_2_title .bt:hover:before,
+.aboutus_2_title .bt:hover:after{
+    border-color: #c8bba1;
+}
+
+
+.subcont_aboutus_3{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.subcont_aboutus_3 ul li{
+    float: left;
+    width: 33.33333333%;
+}
+.subcont_aboutus_3 ul li > .wrap{
+    width: 90%;
+    text-align: center;
+}
+.bg_04142b{
+    background-color: #04142b;
+}
+.subcont_aboutus_3 ul li > .wrap > .align{
+    max-width: 307px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.subcont_aboutus_3 ul li > .wrap.bg_04142b > .align > cite{
+    font-size: 20px;
+    color: #fff;
+}
+.subcont_aboutus_3 ul li > .wrap.bg_04142b > .align > span{
+    color: #fff;
+}
+
+.subcont_aboutus_3 ul li > .wrap .bt{
+    position: relative;
+    top: 0;
+    width: 142px;
+    margin-left: -75px;
+    margin-top: 30px;
+}
+.subcont_aboutus_3 .bt:after{
+    width: 142px;
+}
+
+.subcont_aboutus_3 ul li > .wrap cite{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #04142b;
+    font-style: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.subcont_aboutus_3 ul li > .wrap span{
+    display: block;
+    line-height: 28px;
+    color: #737373;
+    text-align: center;
+}
+.subcont_aboutus_3 ul li > .wrap img{
+    border-radius: 50%;
+    margin: 15px 0 20px;
+}
+.subcont_aboutus_3 ul li > .wrap .name{
+    margin-top: 30px;
+}
+.subcont_aboutus_3 ul li > .wrap .name h3{
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.subcont_aboutus_3 ul li > .wrap .name h4{
+    color: #c8bba1;
+    line-height: 30px;
+}
+.bd_c8bba1{
+    border: 1px #c8bba1 solid;
+    box-sizing: border-box;
+}
+.subcont_aboutus_3 ul li:last-child > .wrap{
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 335px;
+}
+.subcont_aboutus_3 ul li:last-child > .wrap > .align{
+    padding-bottom: 0;
+}
+.subcont_aboutus_3 ul li:last-child > .wrap > .align > .star{
+    background-image: url('../images/star.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    max-width: 205px;
+    height: 110px;
+    margin: 30px auto 0;
+}
+
+/*컨설팅 배너*/
+.subcont_aboutus_4{
+    position: relative;
+    margin: 80px 0;
+    height: 100%;
+    overflow: hidden;
+}
+.aboutus_4_banner{
+    background-image: url('../images/bg-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 240px;
+}
+.aboutus_4_banner > span{
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #fff;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

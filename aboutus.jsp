@@ -18,132 +18,10 @@
     <script src="js/jquery.bxslider.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header_top">
-            <div class="container">
-                <ul>
-                    <li>
-                        <i class="flaticon-location"></i>
-                        <span>4124 Barnes Street, Sanford, FL 32771</span></li>
-                    <li>
-                        <i class="flaticon-clock"></i>
-                        <span>Open: Mon - Sat <span class="c8bba1">08:00 - 19:00.</span>
-                        Sunday <span class="c8bba1">CLOSED</span></span></li>
-                    <li>
-                        <i class="flaticon-technology"></i>
-                        <span> 1-800-<span class="c8bba1">SYDNEY</span>-2171</span></li>
-                    <li>
-                        <div class="search">
-                            <form action="" name="search" method="get">
-                                <fieldset>
-                                    <input type="search" placeholder="Search">
-                                    <input type="submit"  value="">
-                                </fieldset>
-                            </form>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="header">
-            <div class="nav_cont">
-                <nav>
-                    <div class="logo"><a href="index.jsp"><img src="images/logo.png" alt="sydney"></a></div>
-                    <a class="mobile_menu" href="javascript:void(0);"><i class="flaticon-menu"></i></a>
-                    <ul>
-                        <li class="menu">
-                            <a class="menu_home" href="javascript:void(0)">HOME</a>
-                        </li>
-                        <li class="menu">
-                            <a class="menu_page" href="javascript:void(0)">PAGES</a>
-                            <ul class="sub_page">
-                                <li>
-                                    <a href="javascript:void(0)">About<span class="arrow_sub"></span></a>
-                                    <ul class="depth2">
-                                        <li><a href="">About us</a></li>
-                                        <li><a href="">Careers</a></li>
-                                        <li><a href="">History</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Single service</a></li>
-                                <li><a href="">Pricing tables</a></li>
-                                <li>
-                                    <a href="javascript:void(0)">Special pages<span class="arrow_sub"></span></a>
-                                    <ul class="depth2">
-                                        <li><a href="">Error 404</a></li>
-                                        <li><a href="">Maintenance</a></li>
-                                        <li><a href="">Coming soon</a></li>
-                                        <li><a href="">FAQ</a></li>
-                                        <li><a href="">Search results</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Samples pages<span class="arrow_sub"></span></a>
-                                    <ul class="depth2">
-                                        <li><a href="">No sidebar</a></li>
-                                        <li><a href="">Right sidebar</a></li>
-                                        <li><a href="">Left sidebar</a></li>
-                                        <li><a href="">Fluid page</a></li>
-                                        <li><a href="">Boxed page</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu">
-                            <a class="menu_project" href="avascript:void(0)">PROJECTS</a>
-                            <ul class="sub_projects">
-                                <li><a href="">Projects pagination</a></li>
-                                <li><a href="">Projects filter</a></li>
-                                <li><a href="">Projects fullwidth</a></li>
-                                <li><a href="">Single project</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu">
-                            <a class="menu_news" href="avascript:void(0)">NEWS</a>
-                            <ul class="sub_news">
-                                <li><a href="">news right sidebar</a></li>
-                                <li><a href="">news left sidebar</a></li>
-                                <li><a href="">news no sidebar</a></li>
-                                <li>
-                                    <a href="javascript:void(0)">Single news<span class="arrow_sub"></span></a>
-                                    <ul class="depth2">
-                                        <li><a href="">Right sidebar</a></li>
-                                        <li><a href="">Leftt sidebar</a></li>
-                                        <li><a href="">No sidebar</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu">
-                            <a class="menu_contact" href="">CONTACT</a>
-                        </li>
-                        <li class="menu">
-                            <a class="menu_shortcodes" href="avascript:void(0)">SHORTCODES</a>
-                            <ul class="sub_shortcodes">
-                                <li><a href="">Grid</a></li>
-                                <li><a href="">Alerts</a></li>
-                                <li><a href="">Accordions</a></li>
-                                <li><a href="">Counters</a></li>
-                                <li><a href="">Typography</a></li>
-                                <li><a href="">Text boxes</a></li>
-                                <li><a href="">Tabs</a></li>
-                                <li><a href="">Pie charts</a></li>
-                                <li><a href="">Lists</a></li>
-                                <li><a href="">Image boxes</a></li>
-                                <li><a href="">Maps</a></li>
-                                <li><a href="">Progress bars</a></li>
-                                <li><a href="">Headines</a></li>
-                                <li><a href="">Services boxes</a></li>
-                                <li><a href="">Clients</a></li>
-                                <li><a href="">Statistics</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+
+    <!-- header -->
+    <%@ include file="jsp/header.jsp" %>
+
     <section>
         <div class="subcont_top">
             <div class="subcont_container">
@@ -202,95 +80,83 @@
                 </ul>
             </div>
             <div class="subcont_aboutus_2">
-                
+                <div class="aboutus_2_title">
+                    <h3>Get an life ensurance to protect your family.</h3>
+                    <div class="bt">
+                        <a href="#">Get insured</a>
+                    </div>
+                </div>
             </div>
-
-        </div>
-
-
-    </section>
-    <footer>
-        <div class="footer">
-            <ul>
-                <li class="footer_title">
-                    <h3>Don’t hesitate, contact us.</h3>
-                    <h4>1-800-<span class="c8bba1">SYDNEY</span>-4506</h4>
-                    <span>Sed vitae elementum leo, elementum sapien. Cras malesuada.</span>
-                </li>
-                <li class="footer_news">
-                    <h5>RECENT NEWS</h5>
-                    <ul>
-                        <li>
-                            <img src="images/news-1.jpg" alt="">
-                            <div class="footer_news_cont">
-                                <a href="#"><i class="flaticon-clock"></i>April 10, 2016</a>
-                                <span>How to build a succesfull...</span>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/news-2.jpg" alt="">
-                            <div class="footer_news_cont">
-                                <a href="#"><i class="flaticon-clock"></i>April 09, 2016</a>
-                                <span>10 Rules for new entrepreneurs</span>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/news-3.jpg" alt="">
-                            <div class="footer_news_cont">
-                                <a href="#"><i class="flaticon-clock"></i>April 08, 2016</a>
-                                <span>John Doe’s strategy</span>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="footer_link">
-                    <h5>USEFULL LINKS</h5>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Single Service</a></li>
-                        <li><a href="">Portfolio</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Support</a></li>
-                    </ul>
-                </li>
-                <li class="footer_subscribe">
-                    <h5>SUBSCRIBE</h5>
-                    <form class="" action="#" method="post">
-                        <input type="email" name="" placeholder="email">
-                        <input type="submit" name="" value="submit">
-                    </form>
-                    <span>Sed vitae elementum leo, vel faucibus sapien.
-                        Cras malesuada sagittis ante.</span>
-                    <img src="images/logo-2-default.png" alt="">
-                </li>
-            </ul>
-        </div>
-        <div class="footer_copy">
-            <div class="copy">
+            <div class="subcont_aboutus_3">
                 <ul>
-                    <li class="copy_icon">
-                        <a href="#"><i class="flaticon-pinterest-logo"></i></a>
-                        <a href="#"><i class="flaticon-social"></i></a>
-                        <a href="#"><i class="flaticon-instagram-logo"></i></a>
-                        <a href="#"><i class="flaticon-facebook-logo"></i></a>
-                        <a href="#"><i class="flaticon-twitter"></i></a>
+                    <li>
+                        <div class="wrap bg_04142b">
+                            <div class="align">
+                                <cite>Let us help you</cite>
+                                <span>Quisque a ipsum nunc. Morbi pellen tesque,
+                                    purus vel duis sed ipsum amet, risus nisl
+                                    scele risque arcu, id facilisis tellus ipsum
+                                    a purus. Fusce dictum enim sit amet leo
+                                    convallis.</span>
+                                <div class="bt">
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="widget">
-                        <ul>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Legal Notice</a></li>
-                        </ul>
+                    <li>
+                        <div class="wrap">
+                            <img src="images/image-5.jpg" alt="">
+                            <span>Lorem ipsum dolor sit amet, consectet
+                                ur adipiscing elit. Donec nisl urna,
+                                porta eu vulputate eu, scelerisque vel
+                                turpis. Lorem ipsum dolor sit.</span>
+                            <div class="name">
+                                <h3>Paul Smith</h3>
+                                <h4>CEO &amp; Partner</h4>
+                                <span>Hartmann Corporation</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap bd_c8bba1">
+                            <div class="align">
+                                <cite>Our clients ratings <p>recommend us</p></cite>
+                                <span>Quisque a ipsum nunc. Morbi pe llentesque,
+                                    purus vel trist ique vul putate, risus
+                                    nisl duis unde ipsum amet sed.</span>
+                                <div class="star"></div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <a class="scroll_up" href="javascript:void(0)"></a>
-    </footer>
+    </section>
+    <div class="subcont_aboutus_4">
+        <div class="main_img_bg"></div>
+        <div class="aboutus_4_banner">
+            <span>We provide the best Consulting Services</span>
+        </div>
+    </div>
+    <section>
+        <div class="subcont_container">
+            <div class="cont_title">
+                <h2>WHAT ARE WE ABOUT</h2>
+                <span>discover us</span>
+            </div>
+            <div class="subcont_aboutus_2">
+                <div class="aboutus_2_title">
+                    <h3>Get an life ensurance to protect your family.</h3>
+                    <div class="bt">
+                        <a href="#">Get insured</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- footer -->
+    <%@ include file="jsp/footer.jsp" %>
+
 </body>
 </html>
