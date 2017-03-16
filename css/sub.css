@@ -30,6 +30,12 @@
 .breadcrumb span{
     font-size: 14px;
     color: #04142b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.breadcrumb span:hover{
+    color: #c8bba1;
+    transition: 0.3s;
 }
 .breadcrumb span:before{
     content: '';
@@ -106,6 +112,7 @@
     width: 33.33333333%;
     height: 100%;
     margin-left: 66.66666667%;
+    transition: 0.5s;
 }
 .aboutus_2_title h3{
     font-size: 48px;
@@ -247,7 +254,7 @@
 /*컨설팅 배너*/
 .subcont_aboutus_4{
     position: relative;
-    margin: 80px 0;
+    margin: 100px 0;
     height: 100%;
     overflow: hidden;
 }
@@ -259,34 +266,167 @@
     background-attachment: fixed;
     height: 240px;
 }
-.aboutus_4_banner > span{
+.aboutus_4_banner .banner_wrap{
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.aboutus_4_banner .banner_wrap span{
     position: absolute;
-    top: 0;
+    top: 50%;
+    margin-top: -21px;
     font-size: 30px;
     font-weight: 500;
     line-height: 42px;
     color: #fff;
     z-index: 3;
 }
+.aboutus_4_banner .banner_wrap .bt{
+    top: 100px;
+    left: 80%;
+    margin-left: 0;
+    width: 167px;
+    z-index: 3;
+}
+.aboutus_4_banner .banner_wrap .bt:hover{
+    border-color: #c8bba1;
+}
+.aboutus_4_banner .banner_wrap .bt:after{
+    width: 167px;
+}
+
+
+/*MEET THE TEAM*/
+.subcont_aboutus_5{
+    overflow: hidden;
+}
+.subcont_aboutus_5 > ul > li{
+    float: left;
+    width: 33.33333333%;
+}
+.subcont_aboutus_5 > ul > li > .wrap{
+    position: relative;
+    top: 0;
+    width: 90%;
+}
+.subcont_aboutus_5 > ul > li > .wrap > img{
+    width: 100%;
+}
+.subcont_aboutus_5 > ul > li > .wrap > cite{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #04142b;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+.subcont_aboutus_5 > ul > li > .wrap > .name{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #c8bba1;
+    margin-bottom: 30px;
+}
+.subcont_aboutus_5 > ul > li > .wrap > span{
+    display: block;
+    line-height: 24px;
+    color: #737373;
+    text-align: center;
+}
+.subcont_aboutus_5 > ul > li > .wrap .bt{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: -80px;
+    width: 150px;
+    border: 2px #04142b solid;
+    margin-bottom: 20px;
+}
+.subcont_aboutus_5 > ul > li > .wrap .bt a{
+    color: #04142b;
+}
+.subcont_aboutus_5 > ul > li > .wrap .bt:before{
+    border-top: 2px #04142b solid;
+    border-right: 2px #04142b solid;
+}
+.subcont_aboutus_5 > ul > li > .wrap .bt:after{
+    width: 150px;
+    border-bottom: 2px #04142b solid;
+    border-left: 2px #04142b solid;
+}
+
+.subcont_aboutus_5 > ul > li > .wrap .bt:hover{
+    border-color: #c8bba1;
+}
+.subcont_aboutus_5 > ul > li > .wrap .bt a:hover{
+    color: #c8bba1;
+}
+.subcont_aboutus_5 > ul > li > .wrap .bt:hover:before,
+.subcont_aboutus_5 > ul > li > .wrap .bt:hover:after{
+    border-color: #c8bba1;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*PROJECTS*/
+.subcont_project{
+    overflow: hidden;
+}
+.subcont_project > ul > li{
+    position: relative;
+    float: left;
+    width: 33.33333333%;
+    overflow: hidden;
+    transition: 1s;
+}
+.subcont_project > ul > li .view{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    opacity: 0;
+    background-color: rgba(4, 20, 43, 0.9);
+    margin: 30px 30px 30px 0;
+    transition: 0.3s;
+}
+.subcont_project > ul > li:hover .view{
+    width: 100%;
+    opacity: 1;
+}
+.subcont_project > ul > li .view a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    color: #c8bba1;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
+    /*현재 녀석의 기준점을 기준으로 이동*/
+    -ms-transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+.subcont_project > ul > li .view a:hover{
+    color: #fff;
+}
+.subcont_project > ul > li .view a .flaticon-arrows::before{
+    font-size: 13px;
+    color: #c8bba1;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.subcont_project > ul > li .view a:hover .flaticon-arrows::before{
+    color: #fff;
+}
+.subcont_project > ul > li > img{
+    width: 100%;
+    vertical-align: top;
+}
 
 
 

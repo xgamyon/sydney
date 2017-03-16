@@ -570,6 +570,7 @@
     }
     @media screen and (max-width: 749px){
         footer{
+            top: 0;
             height: 1450px;
             transition: 0.5s;
         }

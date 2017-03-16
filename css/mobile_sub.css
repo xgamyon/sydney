@@ -1,0 +1,82 @@
+@media screen and (max-width: 1199px){
+
+    /*이동 경로*/
+    @media screen and (max-width: 875px){
+        .breadcrumb{
+            display: none;
+        }
+
+        /*ABOUT US*/
+        .subcont_aboutus_1 > ul > li{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .aboutus_2_title{
+            width: 100%;
+            margin-left: 0%;
+        }
+        .aboutus_2_title h3{
+            font-size: 40px;
+            line-height: 54px;
+        }
+
+        .subcont_aboutus_3 ul li{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .subcont_aboutus_3 ul li > .wrap{
+            width: 100%;
+        }
+        .subcont_aboutus_3 ul li > .wrap > .align{
+            max-width: 100%;
+        }
+
+        /*컨설팅 배너*/
+        .aboutus_4_banner .banner_wrap span{
+            margin-top: -70px;
+            font-size: 26px;
+            line-height: 36px;
+        }
+        .aboutus_4_banner .banner_wrap .bt{
+            top: 135px;
+            left: 0;
+        }
+
+        @media screen and (max-width: 749px){
+            /*MEET THE TEAM*/
+            .subcont_aboutus_5 > ul > li{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            .subcont_aboutus_5 > ul > li > .wrap{
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+            .subcont_aboutus_5 > ul > li > .wrap > img{
+                width: 100%;
+                max-width: 480px;
+            }
+        }
+
+
+        /*PROJECTS*/
+        .subcont_project > ul > li{
+            width: 50%;
+            transition: 1s;
+        }
+        @media screen and (max-width: 549px){
+            .subcont_project > ul > li{
+                width: 100%;
+                transition: 1s;
+            }
+        }
+
+
+
+
+    }
+
+
+}

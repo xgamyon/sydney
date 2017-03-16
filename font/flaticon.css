@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 27/02/2017 10:03
+  	Creation date: 16/03/2017 09:57
   	*/
 
 @font-face {
@@ -22,29 +22,30 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-camera:before { content: "\f100"; }
-.flaticon-clock:before { content: "\f101"; }
-.flaticon-computer:before { content: "\f102"; }
-.flaticon-facebook-logo:before { content: "\f103"; }
-.flaticon-food:before { content: "\f104"; }
+.flaticon-arrows:before { content: "\f100"; }
+.flaticon-menu-three-horizontal-lines-symbol:before { content: "\f101"; }
+.flaticon-twitter:before { content: "\f102"; }
+.flaticon-social:before { content: "\f103"; }
+.flaticon-facebook-logo:before { content: "\f104"; }
 .flaticon-instagram-logo:before { content: "\f105"; }
-.flaticon-interface:before { content: "\f106"; }
-.flaticon-location:before { content: "\f107"; }
-.flaticon-menu:before { content: "\f108"; }
-.flaticon-musica-searcher:before { content: "\f109"; }
-.flaticon-pinterest-logo:before { content: "\f10a"; }
-.flaticon-shape:before { content: "\f10b"; }
-.flaticon-social:before { content: "\f10c"; }
-.flaticon-technology:before { content: "\f10d"; }
-.flaticon-technology-1:before { content: "\f10e"; }
-.flaticon-technology-2:before { content: "\f10f"; }
-.flaticon-technology-3:before { content: "\f110"; }
-.flaticon-twitter:before { content: "\f111"; }
-.flaticon-wrench:before { content: "\f112"; }
+.flaticon-food:before { content: "\f106"; }
+.flaticon-pinterest-logo:before { content: "\f107"; }
+.flaticon-camera:before { content: "\f108"; }
+.flaticon-wrench:before { content: "\f109"; }
+.flaticon-musica-searcher:before { content: "\f10a"; }
+.flaticon-computer:before { content: "\f10b"; }
+.flaticon-technology-2:before { content: "\f10c"; }
+.flaticon-technology-1:before { content: "\f10d"; }
+.flaticon-shape:before { content: "\f10e"; }
+.flaticon-clock:before { content: "\f10f"; }
+.flaticon-interface:before { content: "\f110"; }
+.flaticon-technology:before { content: "\f111"; }
+.flaticon-location:before { content: "\f112"; }
+.flaticon-technology-3:before { content: "\f113"; }

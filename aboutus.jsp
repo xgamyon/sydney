@@ -1,22 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>:::: minseok portfolio ::::</title>
-    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/mobile.css" type="text/css">
-    <link rel="stylesheet" href="css/sub.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/mainbanner.js"></script>
-    <!-- bx슬라이드 배너 -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-    <script src="js/jquery.bxslider.js"></script>
-</head>
+
+<!-- header -->
+<%@ include file="jsp/head.jsp" %>
+
 <body>
 
     <!-- header -->
@@ -136,22 +124,65 @@
     <div class="subcont_aboutus_4">
         <div class="main_img_bg"></div>
         <div class="aboutus_4_banner">
-            <span>We provide the best Consulting Services</span>
+            <div class="banner_wrap">
+                <span>We provide the best Consulting Services</span>
+                <div class="bt">
+                    <a href="#">Go to services</a>
+                </div>
+            </div>
         </div>
     </div>
     <section>
         <div class="subcont_container">
             <div class="cont_title">
-                <h2>WHAT ARE WE ABOUT</h2>
-                <span>discover us</span>
+                <h2>MEET THE TEAM</h2>
+                <span>here to help</span>
             </div>
-            <div class="subcont_aboutus_2">
-                <div class="aboutus_2_title">
-                    <h3>Get an life ensurance to protect your family.</h3>
-                    <div class="bt">
-                        <a href="#">Get insured</a>
-                    </div>
-                </div>
+            <div class="subcont_aboutus_5">
+                <ul>
+                    <li>
+                        <div class="wrap">
+                            <img src="images/aboutus_image-1.jpg" alt="">
+                            <cite>Brandon Clark</cite>
+                            <span class="name">Founder &amp; CEO</span>
+                            <span>Lorem ipsum dolor sit amet, conse ctet ur
+                                adipisc ing elit. Donec nisl urna, porta eu
+                                vulputate eu, sceleris que vel turpis vel
+                                tristique dolor.</span>
+                            <div class="bt">
+                                <a href="#">View profile</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap">
+                            <img src="images/aboutus_image-2.jpg" alt="">
+                            <cite>Jason Brian Smith</cite>
+                            <span class="name">Finance Consultant</span>
+                            <span>Quisque a ipsum nunc. Morbi pellentesque,
+                                purus vel tristique vulputate, risus nisl
+                                scelerisque arcu, id facil isis tellus
+                                ipsum a purus amet.</span>
+                            <div class="bt">
+                                <a href="#">View profile</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap">
+                            <img src="images/aboutus_image-3.jpg" alt="">
+                            <cite>Martin Hernandez</cite>
+                            <span class="name">HR &amp; Marketing</span>
+                            <span>Tellus ipsum a purus. Fusce dictum enim
+                                sit amet leo convallis, vel suscipit sem
+                                placerat. Aenean eget mi mollis, sagittis
+                                purus sit amet.</span>
+                            <div class="bt">
+                                <a href="#">View profile</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
     </section>
 
