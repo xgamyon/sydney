@@ -7,6 +7,7 @@
 
 <body>
 
+
     <!-- header -->
     <%@ include file="jsp/header.jsp" %>
 
@@ -21,6 +22,39 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+
+            $(function(){
+                var $tg = $('.subcont_project');
+
+                $(window).resize(function(){
+                var item_w = 0;
+
+                    $tg.find('li').each(function(i,e){
+                        item_w = $(e).width();
+                        $(e).css('left',item_w * i);
+                    });
+
+                    var iw = Number(item_w) * $tg.find('li').length;
+
+                    var ea = Math.round($tg.width() / item_w);  //Math.round 반올림
+
+                    for(i=0, j=0; i<$tg.find('li').length; i+=ea,j++){
+                        // console.log(j)
+                        $tg.find('li:gt('+i+')').css({
+                            'top': $tg.find('li').height()*j,
+                            'left': $tg.find('li:lt('+j+')').width()
+                        })
+                    }
+                });
+                $(window).trigger('resize');
+            });
+
+        </script>
+
+
+
         <div class="subcont_container">
             <div class="subcont_project">
                 <ul>
