@@ -1113,6 +1113,8 @@ section{
 .news_box .news_img{
     position: relative;
     top: 0;
+    max-width: 100%;
+    transition: 0.5s;
 }
 .news_box .news_img .news_tab{
     position: absolute;

@@ -7,7 +7,6 @@
 
 <body>
 
-
     <!-- header -->
     <%@ include file="jsp/header.jsp" %>
 

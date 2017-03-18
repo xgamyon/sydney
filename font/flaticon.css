@@ -22,7 +22,7 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
@@ -30,7 +30,7 @@ margin-left: 20px;
 }
 
 .flaticon-arrows:before { content: "\f100"; }
-.flaticon-menu-three-horizontal-lines-symbol:before { content: "\f101"; }
+.flaticon-menu:before { content: "\f101"; }
 .flaticon-twitter:before { content: "\f102"; }
 .flaticon-social:before { content: "\f103"; }
 .flaticon-facebook-logo:before { content: "\f104"; }
@@ -49,3 +49,4 @@ margin-left: 20px;
 .flaticon-technology:before { content: "\f111"; }
 .flaticon-location:before { content: "\f112"; }
 .flaticon-technology-3:before { content: "\f113"; }
+.flaticon-folder:before { content: "\f100"; }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/sub.css" type="text/css">
     <link rel="stylesheet" href="css/mobile_sub.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <%-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script> --%>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/mainbanner.js"></script>
     <!-- bx슬라이드 배너 -->
