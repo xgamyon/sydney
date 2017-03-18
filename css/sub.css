@@ -374,9 +374,10 @@
 /*PROJECTS*/
 .subcont_project{
     overflow: hidden;
+    height:4000px;
 }
 .subcont_project > ul > li{
-    position: relative;
+    position: absolute;
     float: left;
     width: 33.33333333%;
     overflow: hidden;
