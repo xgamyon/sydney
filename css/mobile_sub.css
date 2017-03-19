@@ -83,6 +83,31 @@
         .subcont_news_2{
             width: 35%;
         }
+        @media screen and (max-width: 749px){
+
+            .subcont_news_1{
+                width: 100%;
+            }
+            .subcont_news_1 .wrap{
+                width: 100%;
+            }
+            .subcont_news_1 .wrap > ul > li > .news_box > .news_img{
+                max-width: 100%;
+            }
+            .subcont_news_2{
+                width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 

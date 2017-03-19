@@ -81,7 +81,9 @@ header{
 .search{
     max-width: 260px;
     height: 42px;
-    line-height: 42px;
+    line-height: 40px;
+    border: 2px #c8bba1 solid;
+    box-sizing: border-box;
     background-color: #c8bba1;
 }
 .search form{
@@ -117,6 +119,9 @@ input:-ms-input-placeholder { /* IE 10+ */
     font-size: 14px;
     color: #fff;
     font-style: italic;
+}
+input[type='search']::-ms-clear{
+	display: none;
 }
 .search input[type="submit"]{
     position: absolute;

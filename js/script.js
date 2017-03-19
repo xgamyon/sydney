@@ -289,6 +289,27 @@ $(function(){
 
 $(function(){
 
+    // search
+    $('input[type="search"]').focus(function(){
+        $(this).parent().parent().parent().css('border', '2px #e1e1e1 solid')
+    })
+    $('input[type="search"]').blur(function(){
+        $(this).parent().parent().parent().css('border', '2px #c8bba1 solid')
+    })
+    // 서브 NEWS 페이지 search
+    $('.subcont_news_2 > ul > li > .search input[type="search"]').focus(function(){
+        $(this).parent().parent().parent().css({
+            'border': '2px #e1e1e1 solid',
+            'border-left': '2px #2b3542 solid'
+        })
+    })
+    $('.subcont_news_2 > ul > li > .search input[type="search"]').blur(function(){
+        $(this).parent().parent().parent().css({
+            'border': '2px #e4f0f3 solid',
+            'border-left': '2px #2b3542 solid'
+        })
+    })
+
     // news hover
     $('.news_box').hover(function(){
         $(this).children().find('.news_tab').css('background-color', '#04142b')
