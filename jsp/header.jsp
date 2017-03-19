@@ -32,7 +32,7 @@
                 <a class="mobile_menu" href="javascript:void(0);"><i class="flaticon-menu"></i></a>
                 <ul>
                     <li class="menu">
-                        <a class="menu_home" href="javascript:void(0)">HOME</a>
+                        <a class="menu_home" href="index.jsp">HOME</a>
                     </li>
                     <li class="menu">
                         <a class="menu_page" href="javascript:void(0)">PAGES</a>
@@ -40,7 +40,7 @@
                             <li>
                                 <a href="javascript:void(0)">About<span class="arrow_sub"></span></a>
                                 <ul class="depth2">
-                                    <li><a href="">About us</a></li>
+                                    <li><a href="aboutus.jsp">About us</a></li>
                                     <li><a href="">Careers</a></li>
                                     <li><a href="">History</a></li>
                                 </ul>
@@ -73,7 +73,7 @@
                     <li class="menu">
                         <a class="menu_project" href="avascript:void(0)">PROJECTS</a>
                         <ul class="sub_projects">
-                            <li><a href="">Projects pagination</a></li>
+                            <li><a href="projects.jsp">Projects pagination</a></li>
                             <li><a href="">Projects filter</a></li>
                             <li><a href="">Projects fullwidth</a></li>
                             <li><a href="">Single project</a></li>
@@ -82,7 +82,7 @@
                     <li class="menu">
                         <a class="menu_news" href="avascript:void(0)">NEWS</a>
                         <ul class="sub_news">
-                            <li><a href="">news right sidebar</a></li>
+                            <li><a href="news.jsp">news right sidebar</a></li>
                             <li><a href="">news left sidebar</a></li>
                             <li><a href="">news no sidebar</a></li>
                             <li>
@@ -96,7 +96,7 @@
                         </ul>
                     </li>
                     <li class="menu">
-                        <a class="menu_contact" href="">CONTACT</a>
+                        <a class="menu_contact" href="contact.jsp">CONTACT</a>
                     </li>
                     <li class="menu">
                         <a class="menu_shortcodes" href="avascript:void(0)">SHORTCODES</a>
