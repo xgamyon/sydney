@@ -274,8 +274,6 @@ var slider_parteners = {
     }
 }
 
-
-
 $(function(){
     menu.event();
     menu.scroll();
@@ -284,6 +282,8 @@ $(function(){
     slider.event();
     slider_parteners.event();
 })
+
+
 
 
 
@@ -309,6 +309,21 @@ $(function(){
             'border-left': '2px #2b3542 solid'
         })
     })
+    // 서브 CONTACT 페이지 Send
+    $('[class^="send_"] input').focus(function(){
+        $(this).parent().parent().css('border', '2px #e1e1e1 solid')
+    })
+    $('[class^="send_"] input').blur(function(){
+        $(this).parent().parent().css('border', '2px #e4f0f3 solid')
+    })
+    // 서브 CONTACT 페이지 textarea
+    $('.send_message').focus(function(){
+        $(this).css('border', '2px #e1e1e1 solid')
+    })
+    $('.send_message').blur(function(){
+        $(this).css('border', '2px #e4f0f3 solid')
+    })
+
 
     // news hover
     $('.news_box').hover(function(){
@@ -317,6 +332,7 @@ $(function(){
         $(this).children().find('.news_tab').css('background-color', '#c8bba1')
     })
 
+
     // mail_form
     $('.form_wrap input').focus(function(){
         $(this).css('border-bottom', '2px #c8bba1 solid')
@@ -324,6 +340,7 @@ $(function(){
     $('.form_wrap input').blur(function(){
         $(this).css('border-bottom', '2px #04142b solid')
     })
+
 
     // footer SUBSCRIBE
     $('.footer_subscribe input').focus(function(){
