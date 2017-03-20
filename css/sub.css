@@ -382,7 +382,7 @@
     float: left;
     width: 33.33333333%;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 300ms;
 }
 .subcont_project > ul > li .view{
     position: absolute;
