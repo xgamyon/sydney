@@ -18,7 +18,7 @@
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/jquery.bxslider.js"></script>
 </head>
-<body>
+<body
     <header>
         <div class="header_top">
             <div class="container">
@@ -168,10 +168,15 @@
         <script type="text/javascript">
 
             $(function(){
-                var $tg = $('.subcont_project');
+
 
                 $(window).resize(function(){
-                var item_w = 0;
+
+                    var $tg = $('.subcont_project');
+                    var hh = 0;
+                    var ww = 0;
+                    var total = 0;
+                    var item_w = 0;
 
                     $tg.find('li').each(function(i,e){
                         item_w = $(e).width();
@@ -179,23 +184,20 @@
                     });
 
                     var iw = Number(item_w) * $tg.find('li').length;
-
                     var ea = Math.round($tg.width() / item_w);  //Math.round 반올림
-
-                    // console.log(ea)
-                    for(i=0, j=0; i<$tg.find('li').length; i+=ea,j++){
-                        $tg.find('li:gt('+i+')').css({
-                            'top': $tg.find('li').height()*j
-                        })
-
-                        for(k=0; k < $tg.find('li').length / ea; k++){
-                          console.log(k);
-                          $tg.find('li:eq('+k+')').css({
-                                'left': $tg.find('li').width() * k
-                          })
+                    
+                    for(i=0; i<$tg.find('li').length; i+=ea){
+                        var h = $tg.find('li').height();
+                        $tg.find('li').slice(i,i+3).css('top',h*hh);
+                        hh++;
+                        for(j=0;j<ea;j++){
+                            $tg.find('li').eq(ww).css('left',item_w *j)
+                            ww++
                         }
+
                     }
                 });
+                $('.subcont_project').height(total);
                 $(window).trigger('resize');
             });
 
@@ -206,6 +208,60 @@
         <div class="subcont_container">
             <div class="subcont_project">
                 <ul>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-1.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-2.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-3.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-4.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-5.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-6.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-7.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-8.jpg" alt="">
+                    </li>
+                    <li>
+                        <div class="view">
+                            <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
+                        </div>
+                        <img src="images/projects_image-9.jpg" alt="">
+                    </li>
                     <li>
                         <div class="view">
                             <a href="#">VIEW PROJECT<i class="flaticon-arrows"></i></a>
