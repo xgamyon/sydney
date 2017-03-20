@@ -461,11 +461,11 @@
     color: #c8bba1;
     padding: 0 15px;
 }
-.subcont_news_1 .wrap > ul > li > .news_box > .folder > object{
+.icon_email{
     position: relative;
     top: 3px;
-    width: 18px;
-    margin-right: 20px;
+    width: 16px;
+    margin-right: 8px;
 }
 
 
@@ -558,6 +558,9 @@
     color: #04142b;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+.news_box cite{
+    margin-top: 0;
 }
 .news_latest ul li{
     position: relative;
@@ -708,6 +711,7 @@
 .subcont_contact_1 ul li > .contact_1 > .address > span{
     margin-bottom: 15px;
 }
+
 .icon_btn{
     margin-top: 30px;
 }
@@ -807,6 +811,218 @@
     font-weight: 500;
     color: #c8bba1;
 }
+
+.subcont_contact_2{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.subcont_contact_2 > ul > li:first-child{
+    float: left;
+    width: 66%;
+    margin-right: 2%;
+}
+.subcont_contact_2 > ul > li:last-child{
+    float: left;
+    width: 32%;
+}
+
+
+/*Send*/
+.subcont_contact_2 cite{
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    font-style: normal;
+    color: #04142b;
+    margin-bottom: 30px
+}
+.send > [class^="send_"]{
+    float: left;
+    width:100%;
+    height: 52px;
+    line-height: 52px;
+    background-color: #e4f0f3;
+    border: 2px #e4f0f3 solid;
+    box-sizing: border-box;
+}
+.send > [class^="send_"] form{
+    padding: 0 20px;
+}
+.send > [class^="send_"] form input{
+    position: relative;
+    top: -3px;
+    border: 0;
+    background-color: #e4f0f3;
+    color: #04142b;
+    width: 100%;
+    height: 37px;
+    font-size: 15px;
+    outline: none;
+}
+.send > [class^="send_"] form input::-webkit-input-placeholder,
+.send > .send_message::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: #737373;
+    font-style: italic;
+}
+.send > [class^="send_"] form input::-moz-placeholder,
+.send > .send_message::-moz-placeholder{ /* Firefox 19+ */
+    font-size: 14px;
+    color: #737373;
+    font-style: italic;
+}
+.send > [class^="send_"] form input:-ms-input-placeholder,
+.send > .send_message:-ms-input-placeholder{ /* IE 10+ */
+    font-size: 14px;
+    color: #737373;
+    font-style: italic;
+}
+
+
+.send > .send_name{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.send > .send_email{
+    float: left;
+    width: 48%;
+}
+.send > .send_subject{
+    margin-top: 20px;
+}
+.send > .send_message{
+    float: left;
+    max-width:100%;
+    height: 206px;
+    line-height: 24px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #e4f0f3;
+    border: 2px #e4f0f3 solid;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.send .bt{
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 117px;
+    border: 2px #04142b solid;
+}
+.send .bt a{
+    color: #04142b;
+}
+.send .bt:before{
+    border-top: 2px #04142b solid;
+    border-right: 2px #04142b solid;
+}
+.send .bt:after{
+    width: 117px;
+    border-bottom: 2px #04142b solid;
+    border-left: 2px #04142b solid;
+}
+.send .bt:hover{
+    border-color: #c8bba1;
+}
+.send .bt a:hover{
+    color: #c8bba1;
+}
+.send .bt:hover:before,
+.send .bt:hover:after{
+    border-color: #c8bba1;
+}
+
+
+.advisier ul li{
+    position: relative;
+    top: 0;
+    height: 92px;
+    margin-bottom: 45px;
+}
+.advisier ul li:last-child{
+    margin-bottom: 0;
+}
+.advisier_cont{
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.advisier_cont .name{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #04142b;
+    text-transform: uppercase;
+}
+.advisier_cont span{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    color: #6f7b8a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.advisier_cont span:hover{
+    color: #c8bba1;
+}
+.advisier_cont a{
+    display: block;
+    margin-top: 8px;
+    color: #6f7b8a;
+    transition: 0.3s;
+}
+.advisier_cont a .flaticon-clock:before{
+    color: #c8bba1;
+}
+
+
+/*CONTACT banner*/
+.subcont_contact_banner{
+    position: relative;
+    margin: 100px 0;
+    height: 100%;
+    overflow: hidden;
+}
+.contact_banner{
+    background-image: url('../images/bg-8.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 240px;
+}
+.contact_banner .banner_wrap{
+    position: relative;
+    top: 0;
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
+    z-index: 3;
+}
+.contact_banner .banner_wrap ul li{
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+.contact_banner .banner_wrap ul li:last-child{
+    margin-right: 0;
+}
+.contact_banner .banner_wrap ul li span{
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 
 

@@ -58,7 +58,7 @@
                         </li>
                         <li>
                             <div class="news_box">
-                                <span class="folder"><object data="images/file-folder.svg" type="image/svg+xml"></object>News</span>
+                                <span class="folder"><object class='icon_email' data="images/file-folder.svg" type="image/svg+xml"></object>News</span>
                                 <i class="flaticon-clock"><span>April 05, 2016</span></i>
                                 <cite>Blog post with slider</cite>
                                 <span>Etiam id odio vitae magna aliquam tempus. Phasellus
