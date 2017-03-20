@@ -101,6 +101,41 @@
 
 
 
+        /*CONTACT*/
+        @media screen and (max-width: 749px){
+
+            .subcont_contact_1 ul li{
+                width: 100%;
+                margin-right: 0;
+            }
+            .subcont_contact_2 > ul > li:first-child{
+                float: left;
+                width: 100%;
+                margin-right: 0;
+            }
+            .subcont_contact_2 > ul > li:last-child{
+                float: left;
+                width: 100%;
+            }
+            .contact_1{
+                margin-bottom: 50px;
+            }
+            .contact_2{
+                margin-bottom: 30px;
+            }
+            .advisier{
+                margin-top: 50px;
+            }
+
+            .contact_banner .banner_wrap ul li{
+                width: 100%;
+            }
+            .subcont_contact_banner .main_img_bg{
+                height: 1000px;
+            }
+
+        }
+
 
 
 

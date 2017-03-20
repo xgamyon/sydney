@@ -138,16 +138,35 @@
             <div class="banner_wrap">
                 <ul>
                     <li>
-                        <span>NEW YORK</span>
-                        <span><object class="icon_email" data="images/email.svg" type="image/svg+xml"></object>craigsmall@sydney.com</span>
-                        <span><i class="flaticon-technology"></i>+456 214 54185</span>
-                        <span><i class="flaticon-technology"></i>+456 214 54185</span>
+                        <div class="address">
+                            <span class="name">NEW YORK</span>
+                            <span><i class="flaticon-location"></i>4124 Barnes Street, Sanford, FL 32771</span>
+                            <span><i class="flaticon-technology"></i>407-322-2171</span>
+                            <span><object class="icon_email" data="images/email.svg" type="image/svg+xml"></object>contact@sydney.com</span>
+                        </div>
                     </li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li>
+                        <div class="address">
+                            <span class="name">BERLIN</span>
+                            <span><i class="flaticon-location"></i>3905 Kooter LaneCharlotte, 28202</span>
+                            <span><i class="flaticon-technology"></i>248-145-7145</span>
+                            <span><object class="icon_email" data="images/email.svg" type="image/svg+xml"></object>contact@sydney.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="name">BUCHAREST</span>
+                            <span><i class="flaticon-location"></i>3905 CAlea Victoriei, no.25, 201465</span>
+                            <span><i class="flaticon-technology"></i>125-148-4796</span>
+                            <span><object class="icon_email" data="images/email.svg" type="image/svg+xml"></object>contact@sydney.com</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.5719443523374!2d126.98666142924709!3d37.571840698737304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e7f1b1a4f3%3A0xa7917a736db756ee!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDsooXroZwxLjIuMy406rCA64-ZIDQz!5e0!3m2!1sko!2skr!4v1490000448116" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <!-- footer -->
