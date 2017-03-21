@@ -14,7 +14,7 @@
         <div class="subcont_top">
             <div class="subcont_container">
                 <div class="subcont_title">
-                    <span>PROJECTS</span>
+                    <span>NEWS</span>
                 </div>
                 <div class="breadcrumb">
                     <span>Home</span><span>Projects pagination</span>

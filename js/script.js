@@ -100,6 +100,7 @@ var menu = {
             if(size == "none" && !$('.mobile_menu').is('.mob')){
                 $('.mobile_menu').addClass('mob');
 
+                // 윈도우가 상하 스크롤 했을 시
                 $(window).scroll(function(){
                     var sct = $(this).scrollTop();
                     var nav = $('.nav_cont');
