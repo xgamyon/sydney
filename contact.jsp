@@ -170,7 +170,7 @@
     </div>
 
     <!-- footer -->
-    <%@ include file="jsp/footer.jsp" %>
+    <%@ include file="jsp/footer_top0.jsp" %>
 
 </body>
 </html>

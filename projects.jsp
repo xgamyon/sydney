@@ -24,11 +24,14 @@
 
         <script type="text/javascript">
 
-            $(function(){
-                var $tg = $('.subcont_project');
+            $(window).load(function(){  //$(function(){ 와 같음
+                function underimg(){
 
-                $(window).resize(function(){
-                var item_w = 0;
+                    var $tg = $('.subcont_project');
+                    var hh = 0;
+                    var ww = 0;
+                    var total = 0;
+                    var item_w = 0;
 
                     $tg.find('li').each(function(i,e){
                         item_w = $(e).width();
@@ -36,18 +39,25 @@
                     });
 
                     var iw = Number(item_w) * $tg.find('li').length;
-
                     var ea = Math.round($tg.width() / item_w);  //Math.round 반올림
 
-                    for(i=0, j=0; i<$tg.find('li').length; i+=ea,j++){
-                        // console.log(j)
-                        $tg.find('li:gt('+i+')').css({
-                            'top': $tg.find('li').height()*j,
-                            'left': $tg.find('li:lt('+j+')').width()
-                        })
+                    for(i=0; i<$tg.find('li').length; i+=ea){
+                        var h = $tg.find('li').height();
+                        $tg.find('li').slice(i,i+3).css('top',h*hh);
+                        hh++;
+                        for(j=0;j<ea;j++){
+                            $tg.find('li').eq(ww).css('left',item_w *j)
+                            ww++
+                        }
                     }
+                }
+
+                $(window).resize(function(){
+                    underimg()   // 리사이즈 되면 작동
                 });
-                $(window).trigger('resize');
+                underimg()  // 문서가 불러오면 한번 작동(trigger와 같은 원리)
+                $('.subcont_project').height(total);
+
             });
 
         </script>
@@ -112,6 +122,13 @@
                         <img src="images/projects_image-9.jpg" alt="">
                     </li>
                 </ul>
+                <div class="subcont_project_btn">
+                    <div class="subcont_num_btn">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

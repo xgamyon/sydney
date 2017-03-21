@@ -61,20 +61,6 @@
         }
 
 
-        /*PROJECTS*/
-        .subcont_project > ul > li{
-            width: 50%;
-            transition: 1s;
-        }
-        @media screen and (max-width: 549px){
-            .subcont_project > ul > li{
-                width: 100%;
-                transition: 1s;
-            }
-        }
-
-
-
 
         /*NEWS*/
         .subcont_news_1{
@@ -102,6 +88,7 @@
 
 
         /*CONTACT*/
+
         @media screen and (max-width: 749px){
 
             .subcont_contact_1 ul li{
@@ -136,19 +123,37 @@
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+
+    /*PROJECTS*/
+    /*.subcont_project > ul > li{
+        width: 50%;
+        transition: 1s;
+    }
+    @media screen and (max-width: 549px){
+        .subcont_project > ul > li{
+            width: 100%;
+            transition: 1s;
+        }
+    }*/
+
+
+    /*PROJECTS*/
+    @media screen and (max-width: 1042px){
+        .subcont_project{
+            height: 1600px;
+            transition: 0.3s;
+        }
+        @media screen and (max-width: 632px){
+            .subcont_project{
+                height: 2800px;
+                transition: 0.3s;
+            }
+        }
+    }
+
+
 
 
 }
