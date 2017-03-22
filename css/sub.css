@@ -999,7 +999,6 @@
 }
 .contact_banner{
     background-image: url('../images/bg-8.jpg');
-    background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
     background-attachment: fixed;
@@ -1019,7 +1018,7 @@
     float: left;
     width: 32%;
     margin-right: 2%;
-    padding: 100px 0 50px;
+    padding: 100px 0 100px;
 }
 .contact_banner .banner_wrap ul li:last-child{
     margin-right: 0;

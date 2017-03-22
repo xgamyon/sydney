@@ -116,9 +116,10 @@
 
             .contact_banner .banner_wrap ul li{
                 width: 100%;
+                padding: 80px 0 80px;
             }
             .subcont_contact_banner .main_img_bg{
-                height: 1000px;
+                height: 2000px;
             }
 
         }

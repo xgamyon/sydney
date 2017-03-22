@@ -361,5 +361,15 @@ $(function(){
 
     })
 
+    // parallax bg이미지 하단 슬라이드
+	$('.science').parallax("50%", 0.3);
+	$('.consulting').parallax("50%", 0.3);
+	$('.aboutus_4_banner').parallax("50%", 0.3);
+	$('.contact_banner').parallax("50%", 0.3);
+
+
+
+
+
 
 })

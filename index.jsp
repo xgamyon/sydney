@@ -13,6 +13,9 @@
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/mainbanner.js"></script>
+    <!-- parallax 배너 -->
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
     <!-- bx슬라이드 배너 -->
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/jquery.bxslider.js"></script>
