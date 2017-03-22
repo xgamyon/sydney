@@ -98,13 +98,6 @@ var menu = {
         $(window).resize(function(){
             size = $('.mobile_menu').css('display');
 
-            // if(size == "none" && !$('.mobile_menu').is('.mob')){
-            //     console.log('픽스 넣어!')
-            //     $('.nav_cont').addClass('fix'); // 맨 처음엔 없기 때문에 추가
-            // }else if(size == "block" && $('.mobile_menu').is('.mob')){
-            //     console.log('픽스 빼!')
-            // }
-
             if(size == "none" && !$('.mobile_menu').is('.mob')){
                 $('.mobile_menu').addClass('mob');
 
@@ -113,9 +106,11 @@ var menu = {
                     var sct = $(this).scrollTop();
                     var nav = $('.nav_cont');
 
+
                     if(sct > nav.height()+42){ // 이 if 문이 없으면 그냥 실행 되기 때문
                         nav.addClass('nav_fixed'); // 모바일에서 pc로 왔을경우 맨 처음엔 없기 때문에 추가
                     }
+
 
                 	if( sct > nav.height()+42 && !nav.is('.fix') ){ // 가상으로 fix라는 클래스를 만든것
                 		nav.addClass('fix');
