@@ -322,6 +322,20 @@
         }
     }
 
+    /* 메뉴 타이틀 */
+    @media screen and (max-width: 599px){
+        .cont_title h2{
+            display: block;
+        }
+        .cont_title h2:after{
+            display: block;
+            content: " ";
+            bottom: -7px;
+            width: 50px;
+            border-bottom: 1px #c8bba1 solid;
+        }
+    }
+
 
     /*서비스*/
     @media screen and (max-width: 875px){
